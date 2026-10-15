@@ -1,0 +1,553 @@
+# ==========================================================
+#  DAILY CHALLENGES AND DATE IDEAS
+#  Step by Step Journey to a Godly Marriage
+# ==========================================================
+#
+#  HOW TO ADD SOMETHING NEW
+#  1. Copy one block below, from "type:" down to "added:".
+#  2. Paste it at the very bottom, with one empty line above it.
+#  3. Change the words after each colon.
+#       for:   single, courting or married
+#       added: today's date as YEAR-MONTH-DAY, e.g. 2026-11-02
+#  4. Click "Commit changes". The page updates within a few minutes.
+#
+#  Anything added in the last 7 days gets a "New" badge, and
+#  returning visitors see a "new this week" notice.
+#  Lines that start with # are notes and are ignored.
+#  Keep each block together with no empty lines inside it.
+# ==========================================================
+
+
+# ---------------- SINGLES: DAILY CHALLENGES ----------------
+
+type: challenge
+for: single
+topic: Waiting
+question: Are you still trusting God, even when you don't see the answer yet?
+step: If you're doing everything right and still waiting, don't let your mind push you to compromise. Write down three of God's promises, read them aloud, and wait on Him for strength today. He may be preparing something better.
+verse: Psalm 27:14
+text: Wait on the LORD: be of good courage, and he shall strengthen thine heart: wait, I say, on the LORD.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Thought life
+question: What are you feeding your mind about love and marriage?
+step: Swap one hour of romance shows or scrolling for Scripture or a sermon on marriage.
+verse: Philippians 4:8
+text: Finally, brethren, whatsoever things are true, whatsoever things are honest, whatsoever things are just, whatsoever things are pure, whatsoever things are lovely, whatsoever things are of good report; if there be any virtue, and if there be any praise, think on these things.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Contentment
+question: Are you comparing your timeline to someone else's?
+step: Congratulate one friend who recently got engaged or married, and mean it.
+verse: Ecclesiastes 3:1
+text: To every thing there is a season, and a time to every purpose under the heaven:
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Prayer
+question: Have you prayed for your future spouse today?
+step: Pray for their faith, their character and their protection, wherever they are right now.
+verse: Philippians 4:6
+text: Be careful for nothing; but in every thing by prayer and supplication with thanksgiving let your requests be made known unto God.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Health
+question: Are you caring for the body God gave you?
+step: Take a 30-minute walk today and drink more water. You're preparing for the life ahead.
+verse: 1 Corinthians 6:19
+text: What? know ye not that your body is the temple of the Holy Ghost which is in you, which ye have of God, and ye are not your own?
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Excellence
+question: Are you working with excellence where you are right now?
+step: Do one task at work or school today as if you were doing it for the Lord.
+verse: Colossians 3:23
+text: And whatsoever ye do, do it heartily, as to the Lord, and not unto men;
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Finances
+question: Have you started saving for your future home?
+step: Open or add to a savings account today, even if it's a small amount.
+verse: Proverbs 13:11
+text: Wealth gotten by vanity shall be diminished: but he that gathereth by labour shall increase.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Family
+question: How are you treating your parents and siblings?
+step: Call a family member today just to check on them. How you love your family now shows how you'll love a spouse.
+verse: Ephesians 6:2
+text: Honour thy father and mother; which is the first commandment with promise;
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Forgiveness
+question: Is there someone from a past relationship you still need to forgive?
+step: Pray for them by name today and hand the hurt over to God.
+verse: Matthew 6:14
+text: For if ye forgive men their trespasses, your heavenly Father will also forgive you:
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Words
+question: Do your words build people up?
+step: Go a full day without gossip or complaining.
+verse: Ephesians 4:29
+text: Let no corrupt communication proceed out of your mouth, but that which is good to the use of edifying, that it may minister grace unto the hearers.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Identity
+question: Do you know your worth in God's eyes?
+step: Write this verse somewhere you'll see it every morning this week.
+verse: Psalm 139:14
+text: I will praise thee; for I am fearfully and wonderfully made: marvellous are thy works: and that my soul knoweth right well.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Loneliness
+question: Are you bringing your loneliness to God, or to the wrong people?
+step: When loneliness hits today, pray first, then call a godly friend.
+verse: Psalm 68:6
+text: God setteth the solitary in families: he bringeth out those which are bound with chains: but the rebellious dwell in a dry land.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Generosity
+question: Are you practising generosity now?
+step: Buy a meal or give a small gift to someone in need this week.
+verse: Acts 20:35
+text: I have shewed you all things, how that so labouring ye ought to support the weak, and to remember the words of the Lord Jesus, how he said, It is more blessed to give than to receive.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Purity
+question: Have you settled your commitment to purity before God?
+step: Write a short prayer committing your body and heart to God until marriage, and keep it somewhere private.
+verse: 1 Thessalonians 4:4
+text: That every one of you should know how to possess his vessel in sanctification and honour;
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Surrender
+question: Are you open to God's direction, even if it surprises you?
+step: Tell God one preference you'd let go of if He leads differently, and one non-negotiable you'll keep.
+verse: Proverbs 16:9
+text: A man's heart deviseth his way: but the LORD directeth his steps.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Joy
+question: Are you finding joy in this season?
+step: Plan one thing this week simply because it brings you joy, and thank God for it.
+verse: Psalm 16:11
+text: Thou wilt shew me the path of life: in thy presence is fulness of joy; at thy right hand there are pleasures for evermore.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: The Word
+question: Are you reading God's Word every day?
+step: Read the chapter of Proverbs that matches today's date.
+verse: Psalm 119:105
+text: Thy word is a lamp unto my feet, and a light unto my path.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Discernment
+question: Are you asking God for wisdom about the people you're drawn to?
+step: Before your next conversation with someone you like, pray for discernment.
+verse: James 1:5
+text: If any of you lack wisdom, let him ask of God, that giveth to all men liberally, and upbraideth not; and it shall be given him.
+added: 2026-10-15
+
+type: challenge
+for: single
+topic: Friendship
+question: Are your closest friends pulling you toward God?
+step: Spend time this week with a friend who strengthens your faith.
+verse: 1 Corinthians 15:33
+text: Be not deceived: evil communications corrupt good manners.
+added: 2026-10-15
+
+
+# ---------------- COURTING: DAILY CHALLENGES ----------------
+
+type: challenge
+for: courting
+topic: Purity
+question: Are you choosing celibacy together, and does your partner respect that choice?
+step: Tell your partner plainly that you're saving sex for marriage. Bonding without sex keeps your judgment clear. Watch how they respond: someone who supports and respects your decision is someone you can do life with.
+verse: 2 Timothy 2:22
+text: Flee also youthful lusts: but follow righteousness, faith, charity, peace, with them that call on the Lord out of a pure heart.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Waiting
+question: Are you trusting God's timing for your next step?
+step: Whatever you're waiting on, whether a proposal, a family's blessing or finances, pray together and choose not to force it. Fill your minds with His promises.
+verse: Psalm 37:7
+text: Rest in the LORD, and wait patiently for him: fret not thyself because of him who prospereth in his way, because of the man who bringeth wicked devices to pass.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Long distance
+question: Long distance? Did you connect on purpose today?
+step: Schedule a call with no multitasking, and end it by praying together.
+verse: Genesis 31:49
+text: The LORD watch between me and thee, when we are absent one from another.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Openness
+question: Do you know each other's daily world?
+step: Share your schedules for the week and pray over each other's biggest day.
+verse: Philippians 2:4
+text: Look not every man on his own things, but every man also on the things of others.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Fasting
+question: Have you fasted together for your future?
+step: Choose a day to fast together and pray about one decision you're facing.
+verse: Ezra 8:23
+text: So we fasted and besought our God for this: and he was intreated of us.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Fun
+question: Have you laughed together this week?
+step: Play a game together, in person or online, or watch a match and cheer for the same team.
+verse: Ecclesiastes 3:4
+text: A time to weep, and a time to laugh; a time to mourn, and a time to dance;
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Learning
+question: Are you learning about marriage together?
+step: Choose a Christian marriage book and read the first chapter this week.
+verse: Proverbs 18:15
+text: The heart of the prudent getteth knowledge; and the ear of the wise seeketh knowledge.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Peacemaking
+question: How did you last make up after a disagreement?
+step: Talk about what helped and what didn't, and agree on one rule for disagreeing fairly.
+verse: Matthew 5:9
+text: Blessed are the peacemakers: for they shall be called the children of God.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Service
+question: Have you served others side by side?
+step: Find one way to volunteer together this month.
+verse: Galatians 5:13
+text: For, brethren, ye have been called unto liberty; only use not liberty for an occasion to the flesh, but by love serve one another.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Love in action
+question: Do you know how they most feel loved?
+step: Ask them: "What makes you feel most loved: kind words, time together, gifts, help, or a hug?"
+verse: 1 John 3:18
+text: My little children, let us not love in word, neither in tongue; but in deed and in truth.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Faith
+question: Do you know each other's testimony?
+step: Ask how they came to Christ, and share your own story.
+verse: Revelation 12:11
+text: And they overcame him by the blood of the Lamb, and by the word of their testimony; and they loved not their lives unto the death.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Respect
+question: Do you honour them in public and in private?
+step: Speak well of them to someone today, and if correction is needed, do it privately.
+verse: 1 Peter 2:17
+text: Honour all men. Love the brotherhood. Fear God. Honour the king.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Character
+question: Have you talked about how you each act under stress?
+step: Share how you each behave when tired, hungry or stressed, and how you'd like to be helped.
+verse: Romans 15:7
+text: Wherefore receive ye one another, as Christ also received us to the glory of God.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Finances
+question: Do you have a plan for any debt before the wedding?
+step: List your debts together and agree which one to pay off first.
+verse: Romans 13:8
+text: Owe no man any thing, but to love one another: for he that loveth another hath fulfilled the law.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Wedding
+question: Did you move your wedding list forward this week?
+step: Buy or save toward one item on your wedding list, and tick it off together.
+verse: Proverbs 10:4
+text: He becometh poor that dealeth with a slack hand: but the hand of the diligent maketh rich.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Expectations
+question: Have you described what a normal married week looks like to you?
+step: Each describe your ideal Saturday as a married couple, then compare.
+verse: Proverbs 24:27
+text: Prepare thy work without, and make it fit for thyself in the field; and afterwards build thine house.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Boundaries
+question: Are past relationships fully closed?
+step: Talk honestly about any contact with exes and agree on boundaries together.
+verse: Isaiah 43:18
+text: Remember ye not the former things, neither consider the things of old.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Gratitude
+question: Have you thanked God for them out loud?
+step: Pray a prayer of thanks for them while they listen.
+verse: Psalm 136:1
+text: O give thanks unto the LORD; for he is good: for his mercy endureth for ever.
+added: 2026-10-15
+
+type: challenge
+for: courting
+topic: Peace
+question: Do you each have peace about this relationship?
+step: Pray separately this week and ask God for clear peace, then share honestly what you sense.
+verse: Colossians 3:15
+text: And let the peace of God rule in your hearts, to the which also ye are called in one body; and be ye thankful.
+added: 2026-10-15
+
+
+# ---------------- MARRIED: DAILY CHALLENGES ----------------
+
+type: challenge
+for: married
+topic: Family
+question: Have you blessed your spouse's family recently?
+step: Call your in-laws or send them something small this week.
+verse: Ruth 1:16
+text: And Ruth said, Intreat me not to leave thee, or to return from following after thee: for whither thou goest, I will go; and where thou lodgest, I will lodge: thy people shall be my people, and thy God my God:
+added: 2026-10-15
+
+type: challenge
+for: married
+topic: Waiting
+question: Are you trusting God together in a waiting season?
+step: Whatever you're waiting on, whether children, a job or a home, pray together tonight and read one of His promises aloud.
+verse: Lamentations 3:25
+text: The LORD is good unto them that wait for him, to the soul that seeketh him.
+added: 2026-10-15
+
+
+# ---------------- DATE IDEAS ----------------
+# cost: Free, Low cost or Varies
+
+type: date
+for: married
+idea: Game night for just the two of you
+cost: Free
+added: 2026-10-15
+
+type: date
+for: married
+idea: Watch your favourite team play together, with snacks
+cost: Low cost
+added: 2026-10-15
+
+type: date
+for: married
+idea: Cook a cuisine neither of you has tried before
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: married
+idea: Stargaze from the back yard or a quiet spot outside town
+cost: Free
+added: 2026-10-15
+
+type: date
+for: married
+idea: A worship night or gospel concert together
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: married
+idea: Visit the place where you got engaged or married
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: married
+idea: A bike ride or hike on a local trail
+cost: Free
+added: 2026-10-15
+
+type: date
+for: married
+idea: Coffee date talking only about your dreams for the next five years
+cost: Low cost
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Virtual date: cook the same meal together on a video call
+cost: Free
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Play an online game together
+cost: Free
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Watch a match together and cheer for the same team
+cost: Free
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Read the same Christian book and talk through one chapter
+cost: Low cost
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Attend a premarital class or marriage seminar together
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Visit your pastor or a mentor couple together
+cost: Free
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Shop for one item on your wedding list together
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Daytime picnic in a busy public park
+cost: Low cost
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Pray and worship together on a call
+cost: Free
+added: 2026-10-15
+
+type: date
+for: courting
+idea: Serve together at a community or church event
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: A day of prayer and fasting with a friend
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Visit someone who's lonely, like an elderly church member or a new family
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Start a small Bible study with friends
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Take a class that grows a new skill
+cost: Varies
+added: 2026-10-15
+
+type: date
+for: single
+idea: Cook for a friend who's going through a hard time
+cost: Low cost
+added: 2026-10-15
+
+type: date
+for: single
+idea: Go to a singles or young adults' event at church
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Write a letter to your future spouse and put it away
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Volunteer with a youth or children's ministry
+cost: Free
+added: 2026-10-15
+
+type: date
+for: single
+idea: Plan a budget-friendly trip with a group of friends
+cost: Varies
+added: 2026-10-15

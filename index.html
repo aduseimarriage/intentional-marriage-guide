@@ -1,0 +1,910 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Free daily challenges, checklists and encouragement for singles, courting and married couples, from Mr. & Mrs. Felix and Nancy Adusei.">
+<meta property="og:title" content="Step by Step Journey to a Godly Marriage">
+<meta property="og:description" content="A free daily challenge, Bible verse and checklist for singles, courting and married couples.">
+</head>
+<body>
+<title>Intentional Marriage Daily</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<!-- ANALYTICS: once this page is on your own domain, paste the GoatCounter (or Google Analytics) snippet on the line below. -->
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: single mobile-first column, like a phone bio page; one woven-stripe band as the signature, then today's challenge card, then three paths (married / single / engaged), then contact. */
+:root{
+  --bg:#f6f3f7;
+  --surface:#ffffff;
+  --ink:#1f1a2e;
+  --muted:#5f5872;
+  --line:#e2dcea;
+  --plum:#5b2a6e;
+  --plum-soft:#efe5f3;
+  --gold:#b8860b;
+  --green:#1f6b4f;
+  --green-soft:#e3f1ea;
+  --display:"Young Serif", Georgia, "Times New Roman", serif;
+  --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#15121c;--surface:#1f1a29;--ink:#f1ecf6;--muted:#aaa1bb;--line:#342c42;
+  --plum:#d6a6e8;--plum-soft:#2e2238;--gold:#e7b84a;--green:#6fcf9f;--green-soft:#183026;color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#15121c;--surface:#1f1a29;--ink:#f1ecf6;--muted:#aaa1bb;--line:#342c42;
+  --plum:#d6a6e8;--plum-soft:#2e2238;--gold:#e7b84a;--green:#6fcf9f;--green-soft:#183026;color-scheme:dark}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{-webkit-text-size-adjust:100%}
+body{margin:0}
+:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.55}
+.wrap{max-width:560px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));padding-block:28px 48px;display:flex;flex-direction:column;gap:28px}
+.weave{height:10px;border-radius:999px;background:repeating-linear-gradient(90deg,var(--plum) 0 22px,var(--gold) 22px 30px,var(--green) 30px 52px,var(--gold) 52px 60px)}
+header{display:flex;flex-direction:column;gap:10px;text-align:left}
+.eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.family{font-family:var(--display);font-size:clamp(1.05rem,4.2vw,1.25rem);line-height:1.35;color:var(--plum);margin:0;text-wrap:balance}
+.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:5px;border-radius:14px;background:var(--surface);border:1px solid var(--line);box-shadow:0 6px 18px -12px rgba(31,26,46,.35)}
+.topnav::-webkit-scrollbar{display:none}
+.topnav a,.topnav button{flex:1 0 auto;font:inherit;font-size:.8rem;font-weight:600;color:var(--muted);text-decoration:none;padding:8px 5px;border-radius:10px;border:0;background:transparent;cursor:pointer;text-align:center;white-space:nowrap}
+.topnav a:hover,.topnav button:hover{background:var(--plum-soft);color:var(--plum)}
+.topnav a:focus-visible,.topnav button:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
+section,.start{scroll-margin-top:72px}
+.start{display:flex;flex-direction:column;gap:10px}
+.start-h{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
+.pick{display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px 18px;cursor:pointer;width:100%}
+.pick:hover{border-color:var(--plum)}
+.pick:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.pick span:first-child{display:flex;flex-direction:column;gap:2px;min-width:0}
+.pick b{font-size:1.05rem}
+.pick small{color:var(--muted);font-size:.88rem}
+.pick .arrow{font-size:1.2rem;color:var(--plum);flex:none}
+.pick[aria-pressed="true"]{border-color:var(--plum);background:var(--plum-soft)}
+.pick[aria-pressed="true"] .arrow::before{content:"\2713"}
+.pick[aria-pressed="false"] .arrow::before{content:"\2192"}
+.guide{background:var(--surface);border:1px solid var(--line);border-radius:16px}
+.guide summary{padding:14px 18px;font-weight:700}
+.guide summary small{font-weight:500;color:var(--muted)}
+.guide ol{margin:0;padding:0 18px 0 40px;display:flex;flex-direction:column;gap:10px}
+.guide li{padding-left:4px}
+.guide li b{color:var(--plum)}
+.guide-foot{padding:14px 18px 18px;display:flex;gap:10px;align-items:center;flex-wrap:wrap}
+.guide-foot p{font-size:.85rem;color:var(--muted);flex:1 1 200px}
+.story{display:flex;flex-direction:column;gap:16px}
+.story-intro{color:var(--muted);max-width:60ch}
+.lessons{display:flex;flex-direction:column;gap:10px}
+.lesson{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:16px 18px;display:flex;flex-direction:column;gap:6px}
+.lesson h3{font-size:1.02rem}
+.lesson .stage{font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--green)}
+.lesson p{font-size:.93rem}
+.lesson .try{color:var(--muted)}
+.lesson .try b{color:var(--plum)}
+.lesson a{color:var(--plum);font-weight:600}
+.ld{background:var(--green-soft);border-radius:16px;padding:18px;display:flex;flex-direction:column;gap:8px}
+.ld h3{color:var(--green)}
+.ld p{font-size:.93rem}
+.signed{font-family:var(--display);color:var(--plum)}
+.wl{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:14px}
+.wl-sum{display:flex;flex-direction:column;gap:6px;font-size:.9rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.wl-sum b{color:var(--ink)}
+.wl-items{display:flex;flex-direction:column;gap:6px}
+.wl-row{display:grid;grid-template-columns:22px minmax(0,1fr) 92px 30px;gap:8px;align-items:center}
+.wl-row input[type=checkbox]{width:20px;height:20px;margin:0;accent-color:var(--green)}
+.wl-row .nm{min-width:0;overflow-wrap:anywhere;font-size:.93rem}
+.wl-row.bought .nm{text-decoration:line-through;color:var(--muted)}
+.wl-row input[type=number],.wl-add input{font:inherit;font-size:.9rem;padding:8px;border:1px solid var(--line);border-radius:8px;background:var(--bg);color:var(--ink);width:100%;min-width:0}
+.wl-del{font:inherit;border:0;background:none;color:var(--muted);cursor:pointer;font-size:1.1rem;border-radius:6px}
+.wl-del:focus-visible{outline:3px solid var(--gold)}
+.wl-add{display:grid;grid-template-columns:minmax(0,1fr) 92px auto;gap:8px}
+.wl-add .btn{min-height:0;padding:8px 12px}
+.wl-empty{font-size:.9rem;color:var(--muted)}
+.show-all{align-self:flex-start;font:inherit;font-size:.9rem;font-weight:600;color:var(--plum);background:none;border:0;padding:4px 0;cursor:pointer;text-decoration:underline}
+h1{font-family:var(--display);font-weight:400;font-size:clamp(1.9rem,7vw,2.5rem);line-height:1.12;margin:0;text-wrap:balance}
+h2{font-family:var(--display);font-weight:400;font-size:1.45rem;margin:0;text-wrap:balance}
+h3{font-size:1rem;margin:0;font-weight:700}
+p{margin:0}
+.lede{color:var(--muted);max-width:60ch}
+.free{display:inline-flex;align-self:flex-start;gap:6px;align-items:center;background:var(--green-soft);color:var(--green);font-weight:600;font-size:.85rem;padding:5px 12px;border-radius:999px}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:inherit;font-weight:600;font-size:.95rem;padding:12px 16px;border-radius:12px;border:1px solid var(--line);background:var(--surface);color:var(--ink);text-decoration:none;cursor:pointer;min-height:46px}
+.btn:hover{border-color:var(--plum)}
+.btn:focus-visible,.chip:focus-visible,summary:focus-visible,input:focus-visible+span{outline:3px solid var(--gold);outline-offset:2px}
+.btn.primary{background:var(--plum);border-color:var(--plum);color:var(--bg)}
+.links{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.links .btn.primary{grid-column:1/-1}
+
+/* Today card */
+.today{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:16px}
+.today-top{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap}
+#chips{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;padding-bottom:2px}
+#chips::-webkit-scrollbar{display:none}
+#chips .chip{flex:none}
+.chip.new-chip{border-color:var(--gold);color:var(--ink)}
+.new-badge{font-size:.7rem;letter-spacing:.08em;text-transform:uppercase;font-weight:800;color:#1f1a2e;background:var(--gold);padding:3px 8px;border-radius:6px;margin-left:6px}
+.newsbar{display:flex;align-items:center;justify-content:space-between;gap:10px;flex-wrap:wrap;background:var(--surface);border:1px dashed var(--gold);border-radius:12px;padding:10px 14px;font-size:.9rem}
+.newsbar button{font:inherit;font-weight:700;color:var(--plum);background:none;border:0;cursor:pointer;text-decoration:underline;padding:0}
+.tag{font-size:.75rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--plum);background:var(--plum-soft);padding:4px 10px;border-radius:6px}
+.date{font-size:.85rem;color:var(--muted);font-variant-numeric:tabular-nums}
+.question{font-family:var(--display);font-size:clamp(1.5rem,6vw,1.85rem);line-height:1.22;text-wrap:balance}
+.action{color:var(--muted)}
+.action strong{color:var(--ink)}
+blockquote{margin:0;padding:14px 16px;border-left:3px solid var(--gold);background:var(--bg);border-radius:0 10px 10px 0;display:flex;flex-direction:column;gap:6px}
+blockquote p{font-style:italic}
+blockquote a{color:var(--plum);font-weight:600;font-size:.9rem;font-style:normal}
+.did{display:flex;gap:10px;flex-wrap:wrap}
+.did .btn{flex:1 1 140px}
+.did .btn[aria-pressed="true"]{background:var(--green);border-color:var(--green);color:var(--bg)}
+.nav{display:flex;justify-content:space-between;gap:10px}
+.nav .btn{flex:1}
+.streak{font-size:.85rem;color:var(--muted)}
+.streak a{color:var(--plum);font-weight:600}
+.dash{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:20px}
+.dash-head{display:flex;justify-content:space-between;align-items:baseline;gap:10px;flex-wrap:wrap}
+.private{font-size:.78rem;color:var(--muted)}
+.cheer{font-size:1rem;line-height:1.5}
+.cheer b{color:var(--green)}
+.cheer i{display:block;margin-top:6px;color:var(--muted);font-size:.9rem}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.stat{background:var(--bg);border-radius:12px;padding:12px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.num{font-family:var(--display);font-size:2rem;line-height:1;font-variant-numeric:tabular-nums;color:var(--plum)}
+.lbl{font-size:.8rem;color:var(--muted)}
+.mini{font-size:.75rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.cal{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;max-width:340px;width:100%;padding:3px}
+.cell{display:block;aspect-ratio:1;max-width:100%;border-radius:7px;background:var(--line)}
+.cell.on{background:var(--green)}
+.cell.today{outline:2px solid var(--gold);outline-offset:1px}
+.cal-key{display:flex;gap:14px;margin-top:8px;font-size:.78rem;color:var(--muted)}
+.cal-key span{display:inline-flex;align-items:center;gap:5px}
+.cal-key i{width:10px;height:10px;border-radius:3px;display:inline-block;background:var(--line)}
+.cal-key i.on{background:var(--green)}
+.badges{display:flex;flex-wrap:wrap;gap:8px}
+.badge{font-size:.82rem;font-weight:600;padding:6px 11px;border-radius:999px;border:1px dashed var(--line);color:var(--muted)}
+.badge.on{border:1px solid var(--plum);background:var(--plum-soft);color:var(--plum)}
+.badge.next{border-color:var(--gold);color:var(--ink)}
+.bars{display:flex;flex-direction:column;gap:12px}
+.bar-row{display:flex;flex-direction:column;gap:5px}
+.bar-top{display:flex;justify-content:space-between;font-size:.88rem;gap:8px}
+.bar-top span:last-child{color:var(--muted);font-variant-numeric:tabular-nums}
+.track{height:8px;border-radius:999px;background:var(--line);overflow:hidden}
+.inapp{background:var(--gold);color:#1f1a2e;border-radius:14px;padding:14px 16px;font-size:.92rem;display:flex;flex-direction:column;gap:6px}
+.inapp b{font-weight:700}
+.howto{font-size:.85rem;color:var(--muted);display:flex;flex-direction:column;gap:4px}
+.howto b{color:var(--ink)}
+.backup{border-top:1px solid var(--line);padding-top:18px;display:flex;flex-direction:column;gap:10px}
+.backup p{font-size:.9rem;color:var(--muted)}
+.backup-btns{display:flex;gap:8px;flex-wrap:wrap}
+.backup-btns .btn{flex:1 1 150px;font-size:.9rem}
+.restore{display:flex;flex-direction:column;gap:8px}
+.restore textarea{font:inherit;font-size:.85rem;min-height:70px;border:1px solid var(--line);border-radius:10px;padding:10px;background:var(--bg);color:var(--ink);resize:vertical;width:100%}
+.dates{background:var(--plum-soft);border-radius:20px;padding:22px;display:flex;flex-direction:column;gap:12px}
+.date-tag{font-size:.78rem;font-weight:700;color:var(--green);background:var(--surface);padding:4px 10px;border-radius:999px}
+.date-idea{font-family:var(--display);font-size:1.3rem;line-height:1.3;text-wrap:balance}
+.date-note{font-size:.9rem;color:var(--muted)}
+.dates .btn{align-self:flex-start}
+.fill{height:100%;background:var(--green);border-radius:999px;transition:width .4s}
+
+.chips{display:flex;gap:8px;flex-wrap:wrap}
+.seg{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:4px}
+.seg button{font:inherit;font-weight:600;font-size:.9rem;border:0;border-radius:9px;padding:9px 6px;background:transparent;color:var(--muted);cursor:pointer}
+.seg button[aria-pressed="true"]{background:var(--plum);color:var(--bg)}
+.seg button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+.chip{font:inherit;font-size:.85rem;font-weight:600;padding:7px 12px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+section{display:flex;flex-direction:column;gap:14px}
+.paths{display:flex;flex-direction:column;gap:12px}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;overflow:hidden}
+summary{list-style:none;cursor:pointer;padding:18px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
+summary::-webkit-details-marker{display:none}
+summary .who{display:flex;flex-direction:column;gap:2px;min-width:0}
+summary small{color:var(--muted);font-size:.875rem}
+summary .count{font-size:.8rem;font-weight:700;color:var(--green);white-space:nowrap;font-variant-numeric:tabular-nums}
+.body{padding:0 20px 20px;display:flex;flex-direction:column;gap:18px}
+.group{display:flex;flex-direction:column;gap:8px}
+.group h3{font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;color:var(--plum)}
+label.item{display:grid;grid-template-columns:22px 1fr;gap:10px;align-items:start;cursor:pointer;padding:6px 0}
+label.item input{width:20px;height:20px;margin:2px 0 0;accent-color:var(--green)}
+label.item span{min-width:0}
+label.item small{display:block;color:var(--muted);font-size:.85rem}
+label.item a{color:var(--plum)}
+.row{display:flex;flex-direction:column;gap:6px}
+.enc{margin-left:32px;background:var(--green-soft);border-radius:12px;padding:12px 14px;display:flex;flex-direction:column;gap:8px;font-size:.92rem}
+.enc-word{font-weight:600;color:var(--green)}
+.enc-ex{color:var(--ink)}
+.enc-ex b{font-weight:600}
+.enc-verse{font-style:italic;color:var(--muted)}
+.enc-verse a{font-style:normal;font-weight:600;color:var(--plum);white-space:nowrap}
+.done-msg{background:var(--plum-soft);border-radius:12px;padding:14px;font-size:.92rem}
+@media (prefers-reduced-motion:no-preference){.enc:not([hidden]){animation:rise .3s ease-out}}
+.note{font-size:.85rem;color:var(--muted);background:var(--bg);padding:12px 14px;border-radius:10px}
+
+.contact{background:var(--plum);color:var(--bg);border-radius:20px;padding:24px 22px;display:flex;flex-direction:column;gap:12px}
+.contact h2{color:var(--bg)}
+.contact p{opacity:.92}
+.email-row{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.email{font-weight:700;font-size:1.05rem;background:color-mix(in srgb,var(--bg) 14%,transparent);padding:10px 14px;border-radius:10px;user-select:all;word-break:break-all;flex:1 1 220px}
+.contact .btn{background:var(--bg);color:var(--plum);border-color:var(--bg)}
+.safety{font-size:.8rem;opacity:.85}
+footer{font-size:.8rem;color:var(--muted);text-align:center}
+.toast{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(20px + env(safe-area-inset-bottom,0px));background:var(--ink);color:var(--bg);padding:10px 16px;border-radius:999px;font-size:.9rem;font-weight:600}
+@media (max-width:380px){.links{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:no-preference){.question{animation:rise .35s ease-out}@keyframes rise{from{transform:translateY(4px);opacity:.4}to{transform:none;opacity:1}}}
+</style>
+
+<div class="wrap">
+  <div class="inapp" id="inapp" hidden role="note">
+    <span><b>Opening this inside <span id="appname">an app</span>?</b> Your progress may not be saved here.</span>
+    <span>Tap the <b>⋯</b> or <b>⋮</b> menu and choose <b>Open in browser</b> (Chrome or Safari), then add it to your home screen so you can find it every day.</span>
+  </div>
+  <div class="weave" aria-hidden="true"></div>
+
+  <header>
+    <p class="family">Mr. &amp; Mrs. Felix and Nancy Adusei's Step by Step Journey to a Godly Marriage</p>
+    <h1>A Godly marriage starts with intention, long before “I do” and every day after.</h1>
+    <p class="lede">We're just a married couple sharing what God is teaching us, using our own home as the example. Whether you're single, courting, engaged or married, there's a step here for you today, and you don't have to walk it alone.</p>
+    <span class="free">✓ Totally free. No sign-up.</span>
+  </header>
+
+  <details class="guide" id="guide">
+    <summary>How to use this page <small>&middot; 1 minute</small></summary>
+    <ol>
+      <li><b>Choose where you are</b> just below: single, courting or married. The challenges, date ideas and checklist change to fit you.</li>
+      <li><b>Do today's challenge,</b> then tap <b>I did this today</b>. A new challenge appears every day.</li>
+      <li><b>Tick your checklist</b> as you grow. Each tick opens an encouragement, a real-life example and a Bible verse.</li>
+      <li><b>Read what helped us</b> in <b>Our story</b>, our own lessons from courting, long distance and planning our wedding.</li>
+      <li><b>Watch your progress</b> in <b>Your journey</b>: your streak, calendar and milestones.</li>
+      <li><b>Save this page to your home screen</b> in Chrome or Safari, and come back tomorrow.</li>
+    </ol>
+    <div class="guide-foot"><p>Need prayer or have a question? Write to us at the bottom of the page.</p><button class="btn" id="guideOk">Got it</button></div>
+  </details>
+
+  <div class="start" id="start" aria-labelledby="start-h">
+    <h2 class="start-h" id="start-h">Start here: where are you today?</h2>
+    <button class="pick" data-path="s" aria-pressed="false" data-goatcounter-click="path-single"><span><b>I'm single</b><small>Prepare yourself and know what to look for</small></span><span class="arrow" aria-hidden="true"></span></button>
+    <button class="pick" data-path="c" aria-pressed="false" data-goatcounter-click="path-courting"><span><b>We're courting or engaged</b><small>Prepare for the marriage, not just the wedding</small></span><span class="arrow" aria-hidden="true"></span></button>
+    <button class="pick" data-path="m" aria-pressed="false" data-goatcounter-click="path-married"><span><b>We're married</b><small>Grow closer with one small step a day</small></span><span class="arrow" aria-hidden="true"></span></button>
+  </div>
+
+
+  <nav class="topnav" aria-label="Page sections">
+    <a href="#today-sec">Today</a>
+    <a href="#story">Story</a>
+    <a href="#dates">Dates</a>
+    <a href="#journey">Progress</a>
+    <a href="#paths">Lists</a>
+    <a href="#contact">Pray</a>
+    <button id="navHelp" type="button">Help</button>
+  </nav>
+
+  <a class="btn primary" id="yt" href="#" target="_blank" rel="noopener" data-goatcounter-click="youtube">▶ Watch us on YouTube · @mouthpieceofgod_</a>
+
+  <section id="today-sec" aria-labelledby="today-h">
+    <h2 id="today-h" class="eyebrow" style="font-family:var(--body);font-size:.75rem">Today's challenge</h2>
+    <div class="seg" id="aud" role="group" aria-label="Show challenges for">
+      <button data-a="m" aria-pressed="true">Married</button>
+      <button data-a="c" aria-pressed="false">Courting</button>
+      <button data-a="s" aria-pressed="false">Single</button>
+    </div>
+    <div class="newsbar" id="newsbar" hidden><span id="newsText"></span><button type="button" id="newsBtn">Show me</button></div>
+    <div class="chips" id="chips" role="group" aria-label="Filter by topic"></div>
+    <article class="today" aria-live="polite">
+      <div class="today-top"><span><span class="tag" id="tag"></span><span class="new-badge" id="newBadge" hidden>New</span></span><span class="date" id="date"></span></div>
+      <p class="question" id="question"></p>
+      <p class="action" id="action"></p>
+      <blockquote><p id="verse"></p><a id="ref" href="#" target="_blank" rel="noopener"></a></blockquote>
+      <div class="did">
+        <button class="btn" id="done" aria-pressed="false" data-goatcounter-click="did-challenge">I did this today</button>
+        <button class="btn" id="share">Copy to share</button>
+      </div>
+      <p class="streak" id="streak"></p>
+      <div class="nav">
+        <button class="btn" id="prev">← Previous</button>
+        <button class="btn" id="next">Next →</button>
+      </div>
+    </article>
+  </section>
+
+  <section class="story" id="story" aria-labelledby="story-h">
+    <div>
+      <span class="eyebrow">Our story</span>
+      <h2 id="story-h">What helped us</h2>
+    </div>
+    <p class="story-intro">Part of our courtship, and part of our marriage, was long distance. These are the things that carried us through. None of them are complicated, and you can start any of them this week.</p>
+    <div class="ld">
+      <h3>Going through a long-distance season?</h3>
+      <p>Distance is hard, but it can build trust, communication and patience that last a lifetime. We've lived it, and we came through stronger. You're not alone. Write to us and we'll pray with you.</p>
+    </div>
+    <div class="lessons" id="lessons"></div>
+    <p class="signed">With love, Felix &amp; Nancy Adusei</p>
+  </section>
+
+  <section class="wl" id="wedding" aria-labelledby="wedding-h">
+    <div>
+      <span class="eyebrow">For courting and engaged couples</span>
+      <h2 id="wedding-h">Our wedding list</h2>
+    </div>
+    <p class="story-intro" style="font-size:.93rem">We kept a sheet of everything we needed for an affordable wedding and bought the items together over almost two years, ticking each one off. Start yours here. It's saved on this device and included when you copy your progress.</p>
+    <div class="wl-sum" id="wlSum"></div>
+    <div class="track"><div class="fill" id="wlBar" style="width:0%"></div></div>
+    <div class="wl-items" id="wlItems"></div>
+    <form class="wl-add" id="wlForm">
+      <input id="wlName" placeholder="Add an item, e.g. Rings" aria-label="Item name" autocomplete="off">
+      <input id="wlCost" type="number" min="0" step="any" inputmode="decimal" placeholder="Cost" aria-label="Cost">
+      <button class="btn" type="submit">Add</button>
+    </form>
+  </section>
+
+  <section class="dates" id="dates" aria-labelledby="dates-h">
+    <div class="dash-head"><h2 id="dates-h">Date idea</h2><span><span class="date-tag" id="dateCost"></span><span class="new-badge" id="dateNew" hidden>New</span></span></div>
+    <p class="date-idea" id="dateIdea"></p>
+    <p class="date-note" id="dateNote"></p>
+    <button class="btn" id="dateNext">Give us another idea</button>
+  </section>
+
+  <section class="dash" id="journey" aria-labelledby="journey-h">
+    <div class="dash-head"><h2 id="journey-h">Your journey</h2><span class="private">Saved on this device only</span></div>
+    <p class="cheer" id="cheer" aria-live="polite"></p>
+    <div class="stats">
+      <div class="stat"><span class="num" id="sCur">0</span><span class="lbl">day streak</span></div>
+      <div class="stat"><span class="num" id="sBest">0</span><span class="lbl">best streak</span></div>
+      <div class="stat"><span class="num" id="sTot">0</span><span class="lbl">days total</span></div>
+    </div>
+    <div><h3 class="mini">Last 4 weeks</h3><div class="cal" id="cal"></div>
+      <div class="cal-key"><span><i class="on"></i>Challenge done</span><span><i></i>Not yet</span></div></div>
+    <div><h3 class="mini">Milestones</h3><div class="badges" id="badges"></div></div>
+    <div><h3 class="mini">Checklists</h3><div class="bars" id="bars"></div></div>
+    <div class="howto">
+      <span><b>Keep your progress safe:</b> open this page in Chrome or Safari, not inside Instagram, TikTok or Facebook.</span>
+      <span><b>iPhone (Safari):</b> tap Share, then Add to Home Screen.</span>
+      <span><b>Android (Chrome):</b> tap ⋮, then Add to Home screen.</span>
+    </div>
+    <div class="backup">
+      <h3 class="mini" style="margin:0">Save or move your progress</h3>
+      <p>Changing phones, or want a copy in your Gmail? Copy your progress and email it to yourself. To bring it back, paste it below on any device.</p>
+      <div class="backup-btns">
+        <button class="btn" id="copyProg" data-goatcounter-click="copy-progress">Copy progress to email myself</button>
+        <button class="btn" id="saveProg" hidden>Save progress file</button>
+      </div>
+      <details class="restore-wrap"><summary style="padding:0;font-size:.9rem;font-weight:600;color:var(--plum)">Restore saved progress</summary>
+        <div class="restore" style="margin-top:10px">
+          <label for="restoreText" style="font-size:.85rem;color:var(--muted)">Paste the whole email you sent yourself, or open a saved progress file.</label>
+          <textarea id="restoreText" placeholder="Paste here"></textarea>
+          <div class="backup-btns">
+            <button class="btn" id="restoreBtn">Restore from pasted text</button>
+            <label class="btn" for="restoreFile" style="cursor:pointer">Open progress file</label>
+            <input type="file" id="restoreFile" accept=".json,.txt,application/json,text/plain" hidden>
+          </div>
+        </div>
+      </details>
+    </div>
+  </section>
+
+  <section id="paths" aria-labelledby="paths-h">
+    <h2 id="paths-h">Your checklist</h2>
+    <div class="paths" id="lists"></div>
+    <button class="show-all" id="showAll" hidden>Show checklists for other stages</button>
+    <p class="note">Your ticks are saved only on this phone or browser. Nobody else sees them, including us.</p>
+  </section>
+
+  <section class="contact" id="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Write to us. We'll pray with you.</h2>
+    <p>Share a prayer request, a testimony, or a question for a future video. We read every message and reply as we're able.</p>
+    <div class="email-row">
+      <span class="email" id="email"></span>
+      <button class="btn" id="copyEmail">Copy</button>
+    </div>
+    <div class="email-row">
+      <a class="btn" id="newsletter" href="#" target="_blank" rel="noopener" hidden data-goatcounter-click="newsletter">✉ Get free weekly check-ins by email</a>
+      <a class="btn" id="feedback" href="#" target="_blank" rel="noopener" hidden data-goatcounter-click="feedback">Help us improve: 3 quick questions</a>
+    </div>
+    <p class="safety">We're a couple who love marriage, not licensed counselors. If you or your children are in danger at home, please contact local emergency services or a domestic-violence hotline first, then let us pray with you.</p>
+  </section>
+
+  <footer>Scripture quotations are from the King James Version. Tap any reference to read the full passage.</footer>
+</div>
+<div class="toast" id="toast" hidden></div>
+
+<script>
+/* ===== EDIT THESE TWO LINES ===== */
+const YOUTUBE_URL = "https://www.youtube.com/@mouthpieceofgod_";
+const CONTACT_EMAIL = "fenagodlyrelationships@gmail.com";
+const NEWSLETTER_URL = "";   // paste your Kit (or MailerLite) sign-up page link here; the email button appears automatically
+const FEEDBACK_URL = "";   // paste your Google Form link between the quotes; the feedback button appears automatically
+/* ================================ */
+
+const M = [
+ ["Appreciation","Have you thanked your spouse for something specific today?","Name one thing they did this week and tell them how it made you feel.","Philippians 1:3","I thank my God upon every remembrance of you,"],
+ ["Appreciation","Did you thank your partner for that good meal?","Before you clear the table, say thank you for the hands that made it. If you cooked, thank them for something too.","1 Thessalonians 5:18","In every thing give thanks: for this is the will of God in Christ Jesus concerning you."],
+ ["Intimacy","Did you give your spouse a kiss before stepping out?","No rushed goodbyes today. Stop at the door, hold them, and kiss them like you mean it.","Song of Solomon 8:7","Many waters cannot quench love, neither can the floods drown it:"],
+ ["Communication","Have you really listened today, without planning your reply?","Ask how their day went, then listen for two full minutes before you speak.","James 1:19","Wherefore, my beloved brethren, let every man be swift to hear, slow to speak, slow to wrath:"],
+ ["Forgiveness","Is there something small you're still holding against them?","Let it go out loud tonight: \"I'm not carrying that anymore.\"","Ephesians 4:32","And be ye kind one to another, tenderhearted, forgiving one another, even as God for Christ's sake hath forgiven you."],
+ ["Prayer","Have you prayed with your spouse today, not just for them?","Hold hands for two minutes before bed and pray out loud for each other.","Matthew 18:19","Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven."],
+ ["Communication","Did you answer softly when you felt like snapping?","Catch one sharp reply today and replace it with a gentle one.","Proverbs 15:1","A soft answer turneth away wrath: but grievous words stir up anger."],
+ ["Finances","Do you both know where your money went this week?","Spend 15 calm minutes looking at this week's spending together. No blame, just facts.","Proverbs 24:3","Through wisdom is an house builded; and by understanding it is established:"],
+ ["Vision","Have you dreamed out loud together lately?","Each write three things you want your family to look like in five years. Compare lists.","Habakkuk 2:2","And the LORD answered me, and said, Write the vision, and make it plain upon tables, that he may run that readeth it."],
+ ["Forgiveness","Did you go to bed angry last night?","If there's tension, settle it before sleep tonight, even if the full talk has to wait.","Ephesians 4:26","Be ye angry, and sin not: let not the sun go down upon your wrath:"],
+ ["Appreciation","Have you praised your spouse in front of someone else?","Say something good about them to your kids, a friend, or your parents today.","Proverbs 31:28","Her children arise up, and call her blessed; her husband also, and he praiseth her."],
+ ["Family","Did your children see you love each other today?","Let the kids catch you hugging, laughing, or helping each other.","Psalm 127:1","Except the LORD build the house, they labour in vain that build it:"],
+ ["Intimacy","When did you last plan a date, just the two of you?","Put a date on the calendar this week. It doesn't have to cost money.","Ecclesiastes 4:9","Two are better than one; because they have a good reward for their labour."],
+ ["Communication","Are you two on the same page about this week?","Five minutes tonight: what's coming up, what's worrying you, what do you need from me?","Amos 3:3","Can two walk together, except they be agreed?"],
+ ["Service","What chore can you take off their plate today?","Do one thing they usually do, without being asked and without announcing it.","Philippians 2:3","Let nothing be done through strife or vainglory; but in lowliness of mind let each esteem other better than themselves."],
+ ["Finances","Is there a debt you're avoiding talking about?","Name every debt you have together on one sheet of paper. Seeing it is the first step.","Proverbs 22:7","The rich ruleth over the poor, and the borrower is servant to the lender."],
+ ["Forgiveness","Have you apologized without adding \"but\"?","If you owe an apology, give it plainly: \"I was wrong. I'm sorry. Will you forgive me?\"","Colossians 3:13","Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye."],
+ ["Honour","Did you treat your spouse with honour today?","Speak to them today the way you'd speak to someone you deeply respect.","Romans 12:10","Be kindly affectioned one to another with brotherly love; in honour preferring one another;"],
+ ["Intimacy","Have you protected your marriage bed this week?","Close the door on anything that competes with your spouse: screens, people, or secrets.","Hebrews 13:4","Marriage is honourable in all, and the bed undefiled:"],
+ ["Little foxes","Is a small habit quietly hurting your marriage?","Ask your spouse: \"What's one small thing I do that bothers you?\" Then thank them for answering.","Song of Solomon 2:15","Take us the foxes, the little foxes, that spoil the vines: for our vines have tender grapes."],
+ ["Family","Have you left and cleaved, in the way you make decisions?","Talk about one decision you've been letting parents or in-laws make for you.","Genesis 2:24","Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh."],
+ ["Patience","Were you patient with them today?","Next time they're slow or forgetful today, wait and respond with kindness.","1 Corinthians 13:4","Charity suffereth long, and is kind; charity envieth not; charity vaunteth not itself, is not puffed up,"],
+ ["Vision","Is God at the centre of your plans, or an afterthought?","Before your next big decision, pray about it together first.","Proverbs 3:5","Trust in the LORD with all thine heart; and lean not unto thine own understanding."],
+ ["Appreciation","Did you notice how they look today?","Pay them one genuine compliment about how they look or carry themselves.","Song of Solomon 4:7","Thou art all fair, my love; there is no spot in thee."],
+ ["Prayer","Are your prayers being hindered by how you treat each other?","Husbands: honour her today. Wives: build him up today. Then pray together.","1 Peter 3:7","Likewise, ye husbands, dwell with them according to knowledge, giving honour unto the wife, as unto the weaker vessel, and as being heirs together of the grace of life; that your prayers be not hindered."],
+ ["Finances","Have you agreed on one savings goal together?","Pick one goal and one amount you'll both commit to this month.","Proverbs 21:20","There is treasure to be desired and oil in the dwelling of the wise; but a foolish man spendeth it up."],
+ ["Fruit","Which fruit of the Spirit does your spouse need from you today?","Choose one (gentleness, patience, joy) and practise it on purpose with them.","Galatians 5:22","But the fruit of the Spirit is love, joy, peace, longsuffering, gentleness, goodness, faith,"],
+ ["Counsel","Is there a godly couple you can learn from?","Text an older couple you admire and ask them out for a meal or a call.","Proverbs 11:14","Where no counsel is, the people fall: but in the multitude of counsellors there is safety."],
+];
+const K = [
+ ["Boundaries","Have you agreed on your physical boundaries out loud?","Talk today about where your lines are and how you'll help each other keep them.","1 Thessalonians 4:3","For this is the will of God, even your sanctification, that ye should abstain from fornication:"],
+ ["Prayer","Have you prayed together, not only for each other?","Spend five minutes praying together about your future.","Psalm 34:3","O magnify the LORD with me, and let us exalt his name together."],
+ ["Communication","Do you know how they handle disagreement?","Talk through one small disagreement calmly, and notice how you both respond.","Proverbs 18:13","He that answereth a matter before he heareth it, it is folly and shame unto him."],
+ ["Family","Do your families know about your relationship?","Agree on when and how each of you will introduce the other to family.","Exodus 20:12","Honour thy father and thy mother: that thy days may be long upon the land which the LORD thy God giveth thee."],
+ ["Counsel","Is a pastor or mentor couple watching over your relationship?","Choose one couple you both respect and ask them to walk with you.","Proverbs 15:22","Without counsel purposes are disappointed: but in the multitude of counsellors they are established."],
+ ["Finances","Have you talked honestly about money yet?","Each share how you spend, save and give, and any debts you carry.","Luke 14:28","For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?"],
+ ["Vision","Are you walking in the same direction?","Compare your five-year visions: faith, career, location and children.","Amos 3:3","Can two walk together, except they be agreed?"],
+ ["Wedding","Are you planning a wedding, or a marriage?","Set a wedding budget you could pay without borrowing, then pray over it together.","Proverbs 22:3","A prudent man foreseeth the evil, and hideth himself; but the simple pass on, and are punished."],
+ ["Honesty","Is there something they need to know that you haven't told them?","Pray for courage and a right time to share it.","Ephesians 4:25","Wherefore putting away lying, speak every man truth with his neighbour: for we are members one of another."],
+ ["Encouragement","Did you build them up today?","Send a message naming one quality in them you thank God for.","1 Thessalonians 5:11","Wherefore comfort yourselves together, and edify one another, even as also ye do."],
+ ["Patience","Are you letting your relationship grow at God's pace?","Talk about anything that feels rushed, and agree to slow it down.","Song of Solomon 2:7","I charge you, O ye daughters of Jerusalem, by the roes, and by the hinds of the field, that ye stir not up, nor awake my love, till he please."],
+];
+const S = [
+ ["Seeking God","Are you seeking God first, or a spouse first?","Give the first 15 minutes of your day to prayer and the Word before your phone.","Matthew 6:33","But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you."],
+ ["Contentment","Can you enjoy this season, not just endure it?","Write three good things about your life right now and thank God for each.","Philippians 4:11","Not that I speak in respect of want: for I have learned, in whatsoever state I am, therewith to be content."],
+ ["Purity","Are you guarding your heart in what you watch and scroll?","Mute or unfollow one account that stirs comparison or lust.","Proverbs 4:23","Keep thy heart with all diligence; for out of it are the issues of life."],
+ ["Vision","Have you written down the life God is calling you to?","Write a one-page vision for your faith, career, ministry and family, and pray over it.","Jeremiah 29:11","For I know the thoughts that I think toward you, saith the LORD, thoughts of peace, and not of evil, to give you an expected end."],
+ ["Finances","Will your future spouse inherit your debt or your discipline?","Write this month's budget and list every debt you have.","Proverbs 21:5","The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want."],
+ ["Character","Are you becoming the person you're praying for?","Pick one quality you'd want in a spouse and practise it yourself this week.","1 Timothy 4:12","Let no man despise thy youth; but be thou an example of the believers, in word, in conversation, in charity, in spirit, in faith, in purity."],
+ ["Waiting","Are you waiting on God, or settling out of fear?","Tell God honestly today about any loneliness or pressure you feel.","Isaiah 40:31","But they that wait upon the LORD shall renew their strength; they shall mount up with wings as eagles; they shall run, and not be weary; and they shall walk, and not faint."],
+ ["Healing","Is an old wound still shaping how you see love?","Name one past hurt to God, and to a trusted friend or pastor.","Psalm 147:3","He healeth the broken in heart, and bindeth up their wounds."],
+ ["Friendship","Who speaks honestly into your life?","Ask a mentor or an older couple for an hour of their time this month.","Proverbs 27:17","Iron sharpeneth iron; so a man sharpeneth the countenance of his friend."],
+ ["Service","Are you using this season to serve?","Sign up to help in one area of your church this month.","1 Corinthians 7:32","But I would have you without carefulness. He that is unmarried careth for the things that belong to the Lord, how he may please the Lord:"],
+ ["Discernment","Are you drawn by charm, or by character?","List three qualities that will still matter after 30 years of marriage.","Proverbs 31:30","Favour is deceitful, and beauty is vain: but a woman that feareth the LORD, she shall be praised."],
+];
+const C = [...M.map(x=>[...x,"m",""]), ...K.map(x=>[...x,"c",""]), ...S.map(x=>[...x,"s",""])];
+const NEW_TAG="\u2726 New";
+const RETURNING=(()=>{try{return !!localStorage.getItem("seenGuide")}catch(e){return false}})();
+function daysSince(d){if(!d)return 1e9;const [y,m,dd]=d.split("-").map(Number);if(!y||!m||!dd)return 1e9;return Math.floor((new Date(new Date().getFullYear(),new Date().getMonth(),new Date().getDate())-new Date(y,m-1,dd))/864e5);}
+const isNewDate=d=>{const n=daysSince(d);return n>=0&&n<7;};
+const isNew=i=>isNewDate(C[i][6]);
+const ref = r => "https://www.biblegateway.com/passage/?search="+encodeURIComponent(r)+"&version=KJV";
+const $ = id => document.getElementById(id);
+const store = {get(k,d){try{const v=localStorage.getItem(k);return v?JSON.parse(v):d}catch(e){return d}},set(k,v){try{localStorage.setItem(k,JSON.stringify(v))}catch(e){}}};
+
+const now = new Date();
+const dkey = d => `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,"0")}-${String(d.getDate()).padStart(2,"0")}`;
+const todayKey = dkey(now);
+const doy = Math.floor((now - new Date(now.getFullYear(),0,0))/864e5);
+let aud = store.get("aud","m"); if(!["m","c","s"].includes(aud)) aud="m";
+let filter="All", pool=[], pos=0, dayIndex=0;
+const esc0=s=>String(s).replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;");
+function build(keepFilter){
+  const forAud = C.map((c,i)=>i).filter(i=>C[i][5]===aud);
+  dayIndex = forAud[doy % forAud.length];
+  const newOnes=forAud.filter(isNew);
+  const topics=["All",...(newOnes.length?[NEW_TAG]:[]),...new Set(forAud.map(i=>C[i][0]))];
+  if(!keepFilter||!topics.includes(filter)) filter="All";
+  $("chips").innerHTML = topics.map(t=>`<button class="chip${t===NEW_TAG?" new-chip":""}" aria-pressed="${t===filter}" data-t="${esc0(t)}">${esc0(t)}</button>`).join("");
+  pool = forAud.filter(i=>filter==="All"||(filter===NEW_TAG?isNew(i):C[i][0]===filter));
+  $("newsbar").hidden=!RETURNING||!newOnes.length||filter===NEW_TAG;
+  if(newOnes.length) $("newsText").textContent=`\u2726 ${newOnes.length} new challenge${newOnes.length>1?"s":""} this week`;
+  pos = filter===NEW_TAG ? 0 : Math.max(0,pool.indexOf(dayIndex));
+  $("aud").querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.a===aud));
+}
+function setAud(a){aud=a; store.set("aud",a); build(false); render(); dateIdx=doy; renderDate();}
+const DATES={
+ m:[["Cook a dish from each other's childhood","Low cost"],["Sunrise or sunset walk with phones in a bag","Free"],["Recreate your first date","Varies"],["Picnic in a park with songs from your wedding","Low cost"],["Candlelit dinner at home after the kids are asleep, no TV","Low cost"],["A free museum day or library event","Free"],["A drive with no destination, talking about your dreams","Low cost"],["Write each other a letter and read them aloud over dessert","Free"],["Volunteer together at a food bank or church outreach","Free"],["Learn a dance from an online video in your living room","Free"],["Breakfast date before work","Low cost"],["Look through your wedding photos and pray over the year ahead","Free"]],
+ c:[["Lunch at a caf\u00e9 with ten \u201Cget to know you\u201D questions","Low cost"],["Volunteer together at church or a food bank","Free"],["Dinner with a married couple you both respect","Low cost"],["An afternoon walk in a busy park","Free"],["A meal with one of your families","Free"],["A church event or Bible study together","Free"],["Read a chapter of Proverbs and discuss it over coffee","Low cost"],["Plan a practice budget for your future home at a caf\u00e9","Low cost"],["Group game night with friends","Free"],["A daytime visit to a museum or farmers market","Low cost"]],
+ s:[["Host a small dinner for friends from church","Low cost"],["Join a ministry team this month","Free"],["Take yourself out: a caf\u00e9, a journal, and your vision list","Low cost"],["Ask a married couple to dinner and ask what they wish they'd known","Low cost"],["Group outing: a hike, bowling, or game night","Low cost"],["Learn a skill you'll bring to marriage, like cooking or budgeting","Free"]]};
+const DATE_NOTES={m:"Put it on the calendar this week. A date doesn't need to cost money to count.",c:"Keep it public or with others, in daylight, and say goodnight on time. Friendship first.",s:"For singles: fellowship ideas to build friendships and grow while you wait."};
+let dateIdx=doy;
+function renderDate(){const list=DATES[aud];const d=list[((dateIdx%list.length)+list.length)%list.length];
+  $("dateNew").hidden=!isNewDate(d[2]);
+  $("dates-h").textContent=aud==="s"?"Fellowship idea":"Date idea";
+  $("dateIdea").textContent=d[0]; $("dateCost").textContent=d[1]; $("dateNote").textContent=DATE_NOTES[aud];}
+$("dateNext").onclick=()=>{dateIdx++;renderDate();};
+$("chips").addEventListener("click",e=>{const b=e.target.closest(".chip"); if(!b) return; filter=b.dataset.t; build(true); render();});
+$("aud").addEventListener("click",e=>{const b=e.target.closest("button"); if(b) setAud(b.dataset.a);});
+build(false);
+
+function render(){
+  const c=C[pool[pos]];
+  $("tag").textContent=c[0];
+  $("newBadge").hidden=!isNew(pool[pos]);
+  $("question").textContent=c[1];
+  $("question").style.animation="none"; void $("question").offsetWidth; $("question").style.animation="";
+  $("action").innerHTML="<strong>Today's step:</strong> "+c[2];
+  $("verse").textContent="“"+c[4]+"”";
+  $("ref").textContent=c[3]+" (KJV) · Read the passage →"; $("ref").href=ref(c[3]);
+  const isToday = filter==="All" && pool[pos]===dayIndex;
+  $("date").textContent = isToday ? now.toLocaleDateString(undefined,{weekday:"long",month:"long",day:"numeric"}) : "Bonus challenge";
+  const done = store.get("done",{});
+  const did = !!done[todayKey];
+  $("done").setAttribute("aria-pressed",did); $("done").textContent = did?"✓ Done today":"I did this today";
+  const n=Object.keys(done).length;
+  $("streak").innerHTML = did ? `<b>See you tomorrow!</b> Tomorrow's ${({m:"marriage",c:"courting",s:"singles"})[aud]} challenge is about <b>${tomorrowTopic()}</b>. <a href="#journey">See your progress ↓</a>`
+    : n ? `<a href="#journey">See your progress ↓</a>` : "Tap “I did this today” to start tracking your progress.";
+}
+$("prev").onclick=()=>{pos=(pos-1+pool.length)%pool.length;render()};
+$("next").onclick=()=>{pos=(pos+1)%pool.length;render()};
+$("done").onclick=()=>{const d=store.get("done",{}); const adding=!d[todayKey]; if(adding) d[todayKey]=1; else delete d[todayKey]; store.set("done",d); render(); dash();
+  if(adding){const t=Object.keys(d).length; const m=MS.find(x=>x[0]===t); toast(m?`Milestone reached: ${m[1]}!`:"Well done. See you tomorrow.");}};
+
+function toast(m){$("toast").textContent=m;$("toast").hidden=false;clearTimeout(toast.t);toast.t=setTimeout(()=>$("toast").hidden=true,1800)}
+function copy(text,ok,fallbackEl){
+  try{navigator.clipboard.writeText(text).then(()=>toast(ok),()=>sel(fallbackEl))}catch(e){sel(fallbackEl)}
+}
+function sel(el){if(!el)return;const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r);toast("Selected. Press copy on your keyboard.")}
+$("share").onclick=()=>{const c=C[pool[pos]];copy(`${c[1]}\n${c[2]}\n\n“${c[4]}” (${c[3]}, KJV)\n\n#IntentionalMarriage`,"Copied. Paste it anywhere.",$("question"))};
+$("copyEmail").onclick=()=>copy(CONTACT_EMAIL,"Email address copied",$("email"));
+
+$("email").textContent=CONTACT_EMAIL;
+$("yt").href=YOUTUBE_URL;
+
+/* Checklists: [item, scripture ref, KJV text, what it can look like, encouragement] */
+const L=[
+ {id:"single",title:"Single and preparing",sub:"Become who you're praying for, and know what to look for.",groups:[
+  ["Prepare yourself",[
+   ["My own walk with God is steady, not borrowed from someone else","Matthew 6:33","But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.",
+    "Many people realise their faith was really their parents' or their church's. Owning it can look like a fixed ten minutes with your Bible each morning, kept on the busy days too.",
+    "God isn't grading how long you pray. He's glad you showed up."],
+   ["I've written my vision for life, ministry, career and family","Habakkuk 2:2","And the LORD answered me, and said, Write the vision, and make it plain upon tables, that he may run that readeth it.",
+    "Someone writes, \"I want to serve in missions and own a home without debt.\" Later, when they meet someone, they can compare directions instead of guessing.",
+    "Your vision will change as God leads you. Writing it down just means you're paying attention."],
+   ["I'm handling money responsibly: budget, savings, a plan for any debt","Luke 16:10","He that is faithful in that which is least is faithful also in much: and he that is unjust in the least is unjust also in much.",
+    "A realistic start is listing every debt from smallest to largest and putting any extra money on the smallest until it's gone. It feels slow at first. That's normal.",
+    "Being faithful with a small income now is real preparation, not a delay."],
+   ["I'm working through old hurts instead of carrying them into a relationship","Psalm 147:3","He healeth the broken in heart, and bindeth up their wounds.",
+    "Someone hurt by their parents' broken marriage may notice they pull away whenever a relationship gets serious. Naming that pattern with a pastor or counsellor is often the turning point.",
+    "Needing healing doesn't disqualify you from a good marriage. Hiding the wound is what does the damage."],
+   ["I have a pastor or mentor who knows me and can speak honestly to me","Proverbs 27:17","Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.",
+    "It might be a monthly call with an older believer who asks, \"How is your heart, really?\" and won't just tell you what you want to hear.",
+    "Asking for a mentor isn't weakness. Wise people have always had counsellors."],
+   ["I've decided my physical boundaries before I start dating anyone","1 Corinthians 6:18","Flee fornication. Every sin that a man doeth is without the body; but he that committeth fornication sinneth against his own body.",
+    "Write down now what you will and won't do before marriage, and tell a trusted friend. Decisions made in the heat of the moment rarely go the way you planned.",
+    "Deciding early isn't legalism. It's giving your future self a head start."]]],
+  ["Qualities to look for",[
+   ["A believer who shows faith in daily habits, not only on Sundays","2 Corinthians 6:14","Be ye not unequally yoked together with unbelievers: for what fellowship hath righteousness with unrighteousness? and what communion hath light with darkness?",
+    "Watch how they act when nobody from church is around: how they speak to a waiter, how they handle a bad day, whether they pray when things go wrong.",
+    "You're allowed to wait for someone who loves God more than they love you. That's the safest kind of love."],
+   ["Shows the fruit of the Spirit, especially under pressure","Matthew 7:16","Ye shall know them by their fruits. Do men gather grapes of thorns, or figs of thistles?",
+    "A flight is delayed, a plan falls through, money is short. How someone treats you in those moments is a preview of marriage.",
+    "Nobody is perfect under pressure. You're looking for someone who owns their mistakes and makes them right."],
+   ["Handles conflict without contempt, silence, or cruelty","Proverbs 15:1","A soft answer turneth away wrath: but grievous words stir up anger.",
+    "Healthy sounds like \"I'm upset. Can we talk tonight?\" Unhealthy looks like days of silence, mocking, or threats to leave. Every couple disagrees. The difference is how.",
+    "If you've seen the unhealthy kind growing up, you're free to choose differently now."],
+   ["Works, keeps their word, and is honest with money","Proverbs 22:29","Seest thou a man diligent in his business? he shall stand before kings; he shall not stand before mean men.",
+    "They don't need to be rich. Look for steady effort, bills paid on time, and small promises kept, like calling back when they said they would.",
+    "Faithfulness in small things is one of the clearest signs you can see early."],
+   ["Respects you, your boundaries, and your family","Philippians 2:4","Look not every man on his own things, but every man also on the things of others.",
+    "When you say no to something, do they accept it or keep pushing? How do they speak about your parents when they aren't around?",
+    "Respect isn't a bonus. It's a requirement, and you are worth it."],
+   ["Your vision and theirs can actually walk in the same direction","Amos 3:3","Can two walk together, except they be agreed?",
+    "If one of you feels called to serve abroad and the other never wants to leave home, love alone won't settle it. Talk about it early.",
+    "Different isn't wrong. You just need to know where each other is going before you share the road."],
+   ["Submits to spiritual authority: a pastor, mentor or church they actually listen to, not only their own boss","Hebrews 13:17","Obey them that have the rule over you, and submit yourselves: for they watch for your souls, as they that must give account, that they may do it with joy, and not with grief: for that is unprofitable for you.",
+    "Ask yourself: who can tell this person no? Someone who answers to nobody (\"I don't need church people in my business\") will find it hard to submit to God, and hard to yield to a spouse. If they're not there yet, are they willing to be?",
+    "Submission isn't weakness. Someone who can follow well is far more likely to lead your home well."],
+   ["Teachable: receives correction without getting defensive, and is willing to grow","Proverbs 12:1","Whoso loveth instruction loveth knowledge: but he that hateth reproof is brutish.",
+    "Gently raise something small and watch: do they listen and adjust, or argue and blame? Ask what they've learned or changed about themselves in the last year.",
+    "Nobody arrives finished, including you. A teachable person can keep growing with you for a lifetime."]]],
+  ["Red flags I won't ignore",[
+   ["Pressure to rush, to hide the relationship, or to cross boundaries","1 Corinthians 13:5","Doth not behave itself unseemly, seeketh not her own, is not easily provoked, thinketh no evil;",
+    "\"Don't tell your pastor about us yet.\" \"If you really loved me, you would...\" Love that has to be hidden or forced is a warning sign.",
+    "Noticing a red flag is God's protection, not paranoia. You are allowed to walk away."],
+   ["Control: checking your phone, isolating you from friends or family","2 Timothy 1:7","For God hath not given us the spirit of fear; but of power, and of love, and of a sound mind.",
+    "It often starts small: wanting your passwords, getting angry when you see friends, making you feel guilty for visiting family.",
+    "Control is not love. If this is happening to you, tell someone you trust and write to us. You don't have to work it out alone."],
+   ["Unresolved anger, addiction, or debt they refuse to talk about","Proverbs 22:24","Make no friendship with an angry man; and with a furious man thou shalt not go:",
+    "Everyone has struggles. The warning sign is refusing to talk about them or get help. Someone who is honest and accountable in their recovery is very different from someone who hides.",
+    "You can care about someone and still wait until they've done the work."]]]
+ ]},
+ {id:"engaged",title:"Courting or engaged",sub:"Prepare for the marriage, not just the wedding day.",groups:[
+  ["Counsel and covering",[
+   ["Book premarital counselling with your pastor or a Christian counsellor","Proverbs 11:14","Where no counsel is, the people fall: but in the multitude of counsellors there is safety.",
+    "Many churches offer a short course over a few weeks covering money, conflict, intimacy and family. The hardest session is often the most useful one.",
+    "Counselling isn't a sign something is wrong. It's how you build on rock."],
+   ["Tell both pastors and both families early, and ask for their blessing","Proverbs 1:8","My son, hear the instruction of thy father, and forsake not the law of thy mother:",
+    "Visiting both families together, with your pastor's blessing, before you set a date can save a lot of hurt about someone being \"the last to know.\"",
+    "Even when a family conversation is hard, doing it honestly honours them and honours your marriage."],
+   ["Agree together on how much say parents and elders have in the plans","Genesis 2:24","Therefore shall a man leave his father and his mother, and shall cleave unto his wife: and they shall be one flesh.",
+    "Families may expect a big traditional ceremony. A respectful way to say it: \"We want to honour you, and we've agreed on a budget. Can you help us choose what matters most to you?\"",
+    "Leaving and cleaving doesn't mean shutting family out. It means you two decide together."],
+   ["Choose a mentor couple to walk with you through the first year","Ecclesiastes 4:12","And if one prevail against him, two shall withstand him; and a threefold cord is not quickly broken.",
+    "A mentor couple might have you over once a month in your first year, ask how things are really going, and share their own early mistakes.",
+    "Every strong marriage you admire had help. You're allowed to need it too."]]],
+  ["Hard conversations to finish",[
+   ["Faith: which church, how you'll pray and worship together","Joshua 24:15","...but as for me and my house, we will serve the LORD.",
+    "Two believers from different churches still need to decide where to worship, how to give, and whether to pray together at night.",
+    "You don't need to agree on every detail. You need a shared plan that keeps God at the centre."],
+   ["Children: whether, when, how many, and how you'll raise them","Psalm 127:3","Lo, children are an heritage of the LORD: and the fruit of the womb is his reward.",
+    "One of you wants four children soon; the other wants to wait five years. That gap is far easier to work through before the wedding than after.",
+    "If this conversation brings up hard questions or fears, you're not alone, and God is near in it."],
+   ["Roles: work, chores, careers, and who leads in what","Ephesians 5:21","Submitting yourselves one to another in the fear of God.",
+    "Who cooks? Who handles the bills? Whose career moves first if a job offer comes in another city? Unspoken expectations cause more fights than spoken ones.",
+    "There's no single right arrangement. The right one is the one you agree on together."],
+   ["Extended family: support, expectations, and boundaries","Galatians 6:2","Bear ye one another's burdens, and so fulfil the law of Christ.",
+    "Many couples support parents or siblings financially. Agreeing on an amount together means a family request doesn't turn into a fight between the two of you.",
+    "Caring for family is good. Doing it as a team is better."],
+   ["Conflict: how each of you fights, and how you'll make up","Ephesians 4:26","Be ye angry, and sin not: let not the sun go down upon your wrath:",
+    "One person needs to talk it out right away; the other needs an hour to cool down. Agree on a signal like \"Give me 30 minutes, then let's talk.\"",
+    "Learning to disagree well is one of the greatest gifts you can give your future marriage."]]],
+  ["Money and an affordable ceremony",[
+   ["Share full financial pictures: income, debts, savings, credit","Luke 14:28","For which of you, intending to build a tower, sitteth not down first, and counteth the cost, whether he have sufficient to finish it?",
+    "Put everything on the table: student loans, a car payment, money you send home, your credit history. It may feel exposing, and that's the point.",
+    "Hidden debt hurts trust far more than debt itself. Honesty now is a gift."],
+   ["Set a total wedding budget before you book anything","Proverbs 21:5","The thoughts of the diligent tend only to plenteousness; but of every one that is hasty only to want.",
+    "Decide the total first, then divide it. A venue that takes half the budget feels less exciting once you see what it takes away from everything else.",
+    "A smaller wedding is not a smaller marriage."],
+   ["Plan to start married life without wedding debt","Proverbs 22:7","The rich ruleth over the poor, and the borrower is servant to the lender.",
+    "Starting with a wedding loan can mean your first year's arguments are about payments for a day that's already over.",
+    "Your guests will forget the décor. You'll remember starting free."],
+   ["Trim the guest list and pick what matters most (ring, venue, food or photos)","Proverbs 15:17","Better is a dinner of herbs where love is, than a stalled ox and hatred therewith.",
+    "Each of you picks your top two, maybe food and photos, and you spend less on everything else.",
+    "It's okay if not everyone is invited. The people who love you will understand."],
+   ["Ask church family to help with skills: décor, food, photography, music","1 Peter 4:10","As every man hath received the gift, even so minister the same one to another, as good stewards of the manifold grace of God.",
+    "The choir might sing, a friend who bakes might make the cake, a member with a good camera might take photos. Offer to pay or bless them in return.",
+    "Letting your church family help is part of how they welcome you into marriage."],
+   ["Set aside money for the first three months of rent and bills","Proverbs 6:6","Go to the ant, thou sluggard; consider her ways, and be wise:",
+    "Rent, utilities and groceries for three months saved before the wedding means the honeymoon isn't followed by panic.",
+    "Small amounts saved each month add up faster than you think."]]],
+  ["Settling into your home",[
+   ["Agree on a household budget and how you'll manage accounts","Proverbs 24:3","Through wisdom is an house builded; and by understanding it is established:",
+    "Some couples use one joint account for bills plus a small personal allowance each. Others keep more separate. Pick a system, try it for three months, then review it.",
+    "The best system is the one you'll both actually use."],
+   ["Plan weekly time together that the calendar can't take","Ecclesiastes 4:9","Two are better than one; because they have a good reward for their labour.",
+    "A Friday evening walk or lunch after church on Sunday. Whatever it is, protect it like a meeting you can't miss.",
+    "Busy seasons will come. A standing habit keeps you close through them."],
+   ["Choose a time and a habit for praying together daily","Psalm 127:1","Except the LORD build the house, they labour in vain that build it:",
+    "Holding hands for two minutes before bed and each praying one sentence is enough to start.",
+    "Some nights it will feel dry. Keep showing up. That's what faithfulness looks like."]]],
+  ["Dating that protects your purity",[
+   ["We mostly meet in public or with others, not alone in private places","2 Timothy 2:22","Flee also youthful lusts: but follow righteousness, faith, charity, peace, with them that call on the Lord out of a pure heart.",
+    "Lunch at a restaurant, a church event, a walk in a busy park, dinner with friends or family. Avoid long evenings alone in one of your homes or a hotel room.",
+    "Choosing your settings wisely isn't fear. It's wisdom that protects something precious."],
+   ["We set a time to say goodnight, and we keep it","Romans 13:14","But put ye on the Lord Jesus Christ, and make not provision for the flesh, to fulfil the lusts thereof.",
+    "Agree that you'll part by 9 or 10pm. Late nights and tiredness make it much easier to cross lines you never planned to cross.",
+    "A goodnight time isn't childish. It's a decision made with a clear head that protects you when your head isn't clear."],
+   ["We avoid sexual talk, suggestive photos and late-night calls in bed","Ephesians 5:3","But fornication, and all uncleanness, or covetousness, let it not be once named among you, as becometh saints;",
+    "Texting about desire \"just for fun\" builds pressure you'll have to fight in person. Keep calls and video chats for when you're both up and dressed.",
+    "What you feed grows. Feed your friendship and your faith instead."],
+   ["We have someone who can ask us honestly how we're doing with purity","James 5:16","Confess your faults one to another, and pray one for another, that ye may be healed. The effectual fervent prayer of a righteous man availeth much.",
+    "A mentor couple or trusted friends who can ask, \"Are you keeping your boundaries?\" and get a truthful answer.",
+    "If you've already crossed a line, you can stop, confess and start again. God's grace is bigger than your mistake."],
+   ["We bond in ways that build friendship, not just attraction","Proverbs 17:17","A friend loveth at all times, and a brother is born for adversity.",
+    "Serve together at church, cook for a friend, read a book of the Bible together, or plan a practice budget for your future home. These show you who the other person really is.",
+    "Physical intimacy before marriage can cloud your judgment about whether someone is right for you. Friendship gives you clear eyes."]]]
+ ]},
+ {id:"married",title:"Married and growing",sub:"A monthly check-up for the two of you.",groups:[
+  ["This month, have we...",[
+   ["Prayed together most days","Matthew 18:19","Again I say unto you, That if two of you shall agree on earth as touching any thing that they shall ask, it shall be done for them of my Father which is in heaven.",
+    "If every day feels too big right now, start with three nights a week and build from there.",
+    "God hears short prayers too."],
+   ["Had at least two date nights or walks alone","Song of Solomon 2:10","My beloved spake, and said unto me, Rise up, my love, my fair one, and come away.",
+    "It can be free: a walk, a picnic, a drive. Phones away, and no talk of bills or kids for the first hour.",
+    "You were friends before you were partners in bills and schedules. Keep the friendship alive."],
+   ["Reviewed our budget and savings together","Proverbs 27:23","Be thou diligent to know the state of thy flocks, and look well to thy herds.",
+    "One evening a month with tea and your statements. Celebrate what went well before you fix what didn't.",
+    "Talking about money regularly makes it less scary, not more."],
+   ["Resolved our arguments instead of burying them","Colossians 3:13","Forbearing one another, and forgiving one another, if any man have a quarrel against any: even as Christ forgave you, so also do ye.",
+    "Something as simple as \"I was wrong about how I spoke to you yesterday. Will you forgive me?\" can reset a whole week.",
+    "Every couple argues. Coming back to each other is the win."],
+   ["Revisited our vision board or family goals","Proverbs 29:18","Where there is no vision, the people perish: but he that keepeth the law, happy is he.",
+    "Put a few pictures and goals where you'll see them: a home, a trip, a debt paid off, a ministry dream. Tick one off together.",
+    "Dreaming together reminds you that you're building something, not just getting through."],
+   ["Served someone else together, at church or in the community","Galatians 6:9","And let us not be weary in well doing: for in due season we shall reap, if we faint not.",
+    "Ushering together, visiting an elderly church member, or helping a younger couple move house.",
+    "Serving side by side reminds you that you're on the same team."]]],
+  ["Bonding time this month",[
+   ["We had a long, unhurried talk about dreams, not schedules","Proverbs 20:5","Counsel in the heart of man is like deep water; but a man of understanding will draw it out.",
+    "Ask, \"What's something you've been thinking about lately that I don't know?\" and keep asking follow-up questions.",
+    "Your spouse is still someone to discover. Curiosity keeps love young."],
+   ["We showed affection that wasn't leading anywhere","Song of Solomon 2:6","His left hand is under my head, and his right hand doth embrace me.",
+    "Holding hands in the car, a long hug in the kitchen, a back rub with no expectation attached.",
+    "Small, daily touch tells your spouse, \"I'm glad you're mine.\""],
+   ["We protected our intimacy and talked about it honestly","1 Corinthians 7:5","Defraud ye not one the other, except it be with consent for a time, that ye may give yourselves to fasting and prayer; and come together again, that Satan tempt you not for your incontinency.",
+    "Ask kindly, \"Is there anything that would make our intimacy better for you?\" Busy seasons, children and stress affect every couple. Talking about it is how you stay close.",
+    "Intimacy in marriage is God's gift to you both. It's worth protecting and worth talking about."],
+   ["We laughed together","Proverbs 17:22","A merry heart doeth good like a medicine: but a broken spirit drieth the bones.",
+    "Watch a comedy, play a silly game, or retell a funny story from when you were courting.",
+    "Joy is part of a Godly home, not a distraction from it."],
+   ["We tried something new together","Ecclesiastes 9:9","Live joyfully with the wife whom thou lovest all the days of the life of thy vanity...",
+    "A new recipe, a new walking route, a class together, or a part of town you've never explored.",
+    "New experiences shared together become memories, and memories hold couples together."]]]
+ ]}
+];
+const ticks=store.get("ticks",{});
+const esc=s=>s.replace(/&/g,"&amp;").replace(/</g,"&lt;");
+$("lists").innerHTML=L.map(l=>{
+  const total=l.groups.reduce((a,g)=>a+g[1].length,0);
+  return `<details id="d-${l.id}"><summary><span class="who"><h3>${l.title}</h3><small>${l.sub}</small></span><span class="count" data-c="${l.id}" data-total="${total}"></span></summary><div class="body">`+
+  l.groups.map((g,gi)=>`<div class="group"><h3>${g[0]}</h3>`+g[1].map((it,ii)=>{
+    const k=`${l.id}-${gi}-${ii}`;
+    return `<div class="row"><label class="item"><input type="checkbox" id="${k}" ${ticks[k]?"checked":""}><span>${esc(it[0])}</span></label>
+      <div class="enc" id="e-${k}" ${ticks[k]?"":"hidden"}>
+        <p class="enc-word">${esc(it[4])}</p>
+        <p class="enc-ex"><b>What this can look like:</b> ${esc(it[3])}</p>
+        <p class="enc-verse">“${esc(it[2])}” <a href="${ref(it[1])}" target="_blank" rel="noopener">${it[1]} (KJV)</a></p>
+      </div></div>`}).join("")+`</div>`).join("")+
+  `<div class="done-msg" id="m-${l.id}" hidden><b>You've finished this list.</b> That's real intention, and we'd love to celebrate with you. Write to us with what you learned or what you'd like prayer for next.</div></div></details>`}).join("");
+function counts(){document.querySelectorAll("[data-c]").forEach(el=>{const id=el.dataset.c;const n=[...document.querySelectorAll(`#d-${id} input:checked`)].length;el.textContent=`${n} / ${el.dataset.total}`;$("m-"+id).hidden=n<+el.dataset.total})}
+$("lists").addEventListener("change",e=>{if(e.target.type!=="checkbox")return;ticks[e.target.id]=e.target.checked;store.set("ticks",ticks);$("e-"+e.target.id).hidden=!e.target.checked;counts();dash()});
+/* Journey dashboard */
+const MS=[[1,"First step"],[3,"3 days"],[7,"One week"],[14,"Two weeks"],[30,"Faithful month"],[50,"50 days"],[100,"100 days"],[365,"A full year"]];
+function stats(){
+  const done=store.get("done",{}); const keys=Object.keys(done).sort();
+  let best=0,run=0,prev=null;
+  keys.forEach(k=>{const [y,m,d]=k.split("-").map(Number);const t=new Date(y,m-1,d);
+    run = prev && Math.round((t-prev)/864e5)===1 ? run+1 : 1; best=Math.max(best,run); prev=t;});
+  let cur=0; const d=new Date(now); if(!done[dkey(d)]) d.setDate(d.getDate()-1);
+  while(done[dkey(d)]){cur++; d.setDate(d.getDate()-1);}
+  return {done,total:keys.length,best,cur,today:!!done[todayKey]};
+}
+function dash(){
+  const s=stats();
+  $("sCur").textContent=s.cur; $("sBest").textContent=s.best; $("sTot").textContent=s.total;
+  let msg;
+  if(!s.total) msg="Your journey starts with one small step. Try today's challenge above, then tap <b>I did this today</b>.";
+  else if(s.today && s.cur===1) msg="<b>Day one is done.</b> Small, faithful steps build strong homes. Come back tomorrow.";
+  else if(s.today && s.cur<7) msg=`<b>${s.cur} days in a row.</b> You're building something real. Keep going.`;
+  else if(s.today && s.cur<30) msg=`<b>${s.cur} days in a row!</b> This is what intentional looks like. Your home is feeling it, even when you can't see it yet.`;
+  else if(s.today) msg=`<b>${s.cur} days in a row.</b> That's faithfulness. Would you write and tell us what has changed? Your story could encourage someone else.`;
+  else if(s.cur>0) msg=`You're on a <b>${s.cur}-day streak</b>. Today's challenge keeps it going.`;
+  else msg=`Missed a few days? That's okay. You've still done <b>${s.total} day${s.total>1?"s":""}</b>, and that counts.<i>“They are new every morning: great is thy faithfulness.” Lamentations 3:23</i>`;
+  $("cheer").innerHTML=msg;
+  let cal=""; for(let i=27;i>=0;i--){const d=new Date(now); d.setDate(d.getDate()-i); const k=dkey(d);
+    cal+=`<span class="cell${s.done[k]?" on":""}${i===0?" today":""}" title="${d.toLocaleDateString(undefined,{month:"short",day:"numeric"})}${s.done[k]?": done":""}"></span>`;}
+  $("cal").innerHTML=cal;
+  const next=MS.find(m=>m[0]>s.total);
+  $("badges").innerHTML=MS.map(m=>m[0]<=s.total?`<span class="badge on">✓ ${m[1]}</span>`:m===next?`<span class="badge next">${m[1]} · ${m[0]-s.total} to go</span>`:`<span class="badge">${m[1]}</span>`).join("");
+  $("bars").innerHTML=L.map(l=>{const t=l.groups.reduce((a,g)=>a+g[1].length,0);const n=Object.keys(ticks).filter(k=>ticks[k]&&k.startsWith(l.id+"-")).length;
+    return `<div class="bar-row"><div class="bar-top"><span>${l.title}</span><span>${n} / ${t}</span></div><div class="track"><div class="fill" style="width:${Math.round(n/t*100)}%"></div></div></div>`}).join("");
+}
+function tomorrowTopic(){const fa=C.map((c,i)=>i).filter(i=>C[i][5]===aud);return C[fa[(doy+1)%fa.length]][0];}
+
+/* In-app browser notice */
+(()=>{const ua=navigator.userAgent||"";const apps=[[/Instagram/i,"Instagram"],[/FBAN|FBAV|FB_IAB/i,"Facebook"],[/TikTok|musical_ly|Bytedance/i,"TikTok"],[/Snapchat/i,"Snapchat"],[/WhatsApp/i,"WhatsApp"],[/Twitter/i,"X"],[/LinkedInApp/i,"LinkedIn"]];
+  const hit=apps.find(a=>a[0].test(ua)); if(hit){$("appname").textContent=hit[1];$("inapp").hidden=false;}})();
+
+/* Backup and restore */
+function progressData(){return {v:1,saved:todayKey,done:store.get("done",{}),ticks:store.get("ticks",{}),wlist:store.get("wlist",[]),aud:aud};}
+function progressCode(){return "IMD1-"+btoa(unescape(encodeURIComponent(JSON.stringify(progressData()))));}
+function progressSummary(){const s=stats();return `My Intentional Marriage progress (saved ${now.toLocaleDateString()})\n\nCurrent streak: ${s.cur} days\nBest streak: ${s.best} days\nTotal days: ${s.total}\n\nTo restore, open the page, choose "Restore saved progress" and paste this whole email.\n\n${progressCode()}`;}
+$("copyProg").onclick=()=>{const txt=progressSummary();
+  try{navigator.clipboard.writeText(txt).then(()=>toast("Copied. Paste it into an email to yourself."),()=>fallbackCopy(txt))}catch(e){fallbackCopy(txt)}};
+function fallbackCopy(txt){const t=$("restoreText");t.closest("details").open=true;t.value=txt;t.select();toast("Selected. Press copy, then paste into an email.");}
+function applyRestore(raw){
+  try{let data;const m=raw.match(/IMD1-([A-Za-z0-9+/=]+)/);
+    data = m ? JSON.parse(decodeURIComponent(escape(atob(m[1])))) : JSON.parse(raw);
+    if(!data||typeof data.done!=="object") throw 0;
+    const d=Object.assign(store.get("done",{}),data.done); const t=Object.assign(store.get("ticks",{}),data.ticks||{});
+    store.set("done",d); store.set("ticks",t); Object.assign(ticks,t);
+    document.querySelectorAll('#lists input[type=checkbox]').forEach(cb=>{cb.checked=!!ticks[cb.id];$("e-"+cb.id).hidden=!cb.checked;});
+    if(Array.isArray(data.wlist)&&data.wlist.length){store.set("wlist",data.wlist);wl=data.wlist;renderWL();}
+    counts(); render(); dash(); $("restoreText").value=""; toast(`Restored ${Object.keys(data.done).length} days of progress.`);
+  }catch(e){toast("That doesn't look like saved progress. Paste the whole email, including the code at the end.");}
+}
+$("restoreBtn").onclick=()=>applyRestore($("restoreText").value);
+$("restoreFile").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().then(applyRestore);e.target.value="";};
+(async()=>{try{const dl=window.claude&&await window.claude.use("downloads");
+  const b=$("saveProg");
+  b.onclick=async()=>{const data=JSON.stringify(progressData(),null,1);const name=`intentional-marriage-progress-${todayKey}.json`;
+    if(dl){try{await dl.save({filename:name,data});toast("Progress file saved.");}catch(err){if(err&&err.code!=="declined")toast("Saving isn't available here. Use Copy instead.");}}
+    else{const a=document.createElement("a");a.href=URL.createObjectURL(new Blob([data],{type:"application/json"}));a.download=name;document.body.appendChild(a);a.click();a.remove();}};
+  b.hidden=!dl && !!window.claude;}catch(e){}})();
+
+counts(); render(); dash(); renderDate();
+if(FEEDBACK_URL){$("feedback").href=FEEDBACK_URL;$("feedback").hidden=false;}
+if(NEWSLETTER_URL){$("newsletter").href=NEWSLETTER_URL;$("newsletter").hidden=false;}
+
+/* Extra content from content.txt (edit that file to add challenges and date ideas) */
+const AUD_OF={single:"s",singles:"s",courting:"c",engaged:"c",married:"m"};
+function parseContent(txt){
+  const out={challenges:[],dates:[]};
+  txt.replace(/\r/g,"").split(/\n\s*\n/).forEach(block=>{
+    const o={};
+    block.split("\n").forEach(line=>{if(/^\s*#/.test(line)||!line.trim())return;const k=line.indexOf(":");if(k<1)return;o[line.slice(0,k).trim().toLowerCase()]=line.slice(k+1).trim();});
+    const a=AUD_OF[(o.for||"").toLowerCase()];
+    if(!o.type||!a) return;
+    if(o.type.toLowerCase()==="challenge"&&o.topic&&o.question&&o.step&&o.verse&&o.text) out.challenges.push([o.topic,o.question,o.step,o.verse,o.text,a,o.added||""]);
+    else if(o.type.toLowerCase()==="date"&&o.idea) out.dates.push([a,[o.idea,o.cost||"Free",o.added||""]]);
+    else console.warn("Skipped an incomplete block in content.txt:",block.slice(0,80));
+  });
+  return out;
+}
+fetch("content.txt",{cache:"no-cache"}).then(r=>r.ok?r.text():"").then(txt=>{
+  if(!txt) return;
+  const extra=parseContent(txt);
+  const seen=new Set(C.map(c=>c[5]+"|"+c[1]));
+  extra.challenges.forEach(c=>{if(!seen.has(c[5]+"|"+c[1])){C.push(c);seen.add(c[5]+"|"+c[1]);}});
+  extra.dates.forEach(([a,d])=>{if(!DATES[a].some(x=>x[0]===d[0]))DATES[a].push(d);});
+  build(true); render(); renderDate();
+}).catch(()=>{});
+$("newsBtn").onclick=()=>{filter=NEW_TAG;build(true);render();};
+
+/* Our story */
+const LESSONS=[
+ ["Courting \u00b7 Long distance","We were transparent with each other","We always knew each other's whereabouts and shared our locations. We chose to be open and vulnerable with each other, even about our struggles.","Agree together on what openness looks like for you. It builds trust when both of you offer it freely. It becomes control when one person demands it."],
+ ["Courting \u00b7 Married","We prayed and fasted together","Distance didn't stop us praying together. We set times to pray and fast as a couple.","Choose one day this month to fast together, and a time to pray together on a call."],
+ ["Courting \u00b7 Long distance","We kept it fun","We played games together, watched games together, and had virtual dates.","Plan a video-call date: cook the same meal, watch the same film, or play an online game."],
+ ["Courting \u00b7 Engaged","We honoured our families and pastors","We gave both our families and our pastors the honour they were due, and we respected their advice.","Ask an elder in each family one question about marriage, and really listen to the answer."],
+ ["Engaged","We got counsel and did the work","We had counselling, including our church's premarital counselling, and did practical couple exercises to strengthen our bond.","Ask your pastor this week what premarital counselling your church offers."],
+ ["Courting \u00b7 Married","We read good Christian books together","Reading Christian books for couples gave us shared language and fresh things to talk about.","Pick one Christian marriage book and read a chapter a week together."],
+ ["Courting \u00b7 Engaged","We guarded our purity until our wedding day","We avoided anything that triggered sexual lust until we got married.","Be honest with each other about your triggers, and agree together to avoid them."],
+ ["Engaged","We bought our wedding gradually","We kept a sheet of everything we had to buy and pay for. For almost two years we bought the items together and ticked them off until everything was ready for our wedding day.",'<a href="#wedding" id="toWedding">Start your own wedding list \u2193</a>'],
+ ["Married","We share a joint account","Our joint account makes it easy to stay accountable to each other with money.","Once you're married, decide together how your accounts will work. While courting, you can still keep each other accountable by sharing your budgets."]
+];
+$("lessons").innerHTML=LESSONS.map(l=>`<article class="lesson"><span class="stage">${l[0]}</span><h3>${l[1]}</h3><p>${l[2]}</p><p class="try">${l[3].startsWith("<a")?l[3]:"<b>Try this:</b> "+l[3]}</p></article>`).join("");
+
+/* Wedding list */
+const WL_START=["Engagement and wedding rings","Wedding dress and suit","Venue or church hall","Food and drinks","Photography","Decorations","Invitations","Gift for the officiating minister","Traditional or family items","First three months of rent and bills"];
+let wl=store.get("wlist",[]); if(!Array.isArray(wl)) wl=[];
+const fmt=n=>Number(n||0).toLocaleString(undefined,{maximumFractionDigits:2});
+function saveWL(){store.set("wlist",wl);}
+function renderWL(){
+  if(!wl.length){
+    $("wlItems").innerHTML=`<p class="wl-empty">Your list is empty. Add your first item below, or <button class="show-all" id="wlStarter" type="button">add our starter list</button> and edit it to fit your plans.</p>`;
+    $("wlStarter").onclick=()=>{wl=WL_START.map(n=>({n,c:0,b:false}));saveWL();renderWL();};
+  } else {
+    $("wlItems").innerHTML=wl.map((it,i)=>`<div class="wl-row${it.b?" bought":""}"><input type="checkbox" id="wl${i}" data-i="${i}" ${it.b?"checked":""} aria-label="Bought: ${esc(it.n)}"><label class="nm" for="wl${i}">${esc(it.n)}</label><input type="number" min="0" step="any" inputmode="decimal" id="wlc${i}" data-c="${i}" value="${it.c||""}" placeholder="Cost" aria-label="Cost of ${esc(it.n)}"><button class="wl-del" type="button" data-d="${i}" aria-label="Remove ${esc(it.n)}">\u00d7</button></div>`).join("");
+  }
+  const total=wl.reduce((a,x)=>a+(+x.c||0),0), got=wl.filter(x=>x.b), gotAmt=got.reduce((a,x)=>a+(+x.c||0),0);
+  const pct=wl.length?Math.round(got.length/wl.length*100):0;
+  $("wlBar").style.width=pct+"%";
+  $("wlSum").innerHTML = wl.length
+    ? `<span><b>${got.length} of ${wl.length}</b> items bought${total?` \u00b7 <b>${fmt(gotAmt)}</b> of ${fmt(total)} paid`:""}</span><span>${pct===100?"Everything is ready. Praise God! We'd love to hear about your day.":pct>=50?"More than halfway there. Keep going, one item at a time.":got.length?"A good start. Small, steady steps get you there without debt.":"Tick each item off as you buy it together."}</span>`
+    : "";
+}
+$("wlItems").addEventListener("change",e=>{const t=e.target;
+  if(t.dataset.i!==undefined){wl[+t.dataset.i].b=t.checked;saveWL();renderWL();if(t.checked)toast("Ticked off. Well done!");}
+  else if(t.dataset.c!==undefined){wl[+t.dataset.c].c=Math.max(0,+t.value||0);saveWL();renderWL();}});
+$("wlItems").addEventListener("click",e=>{const d=e.target.closest("[data-d]");if(!d)return;wl.splice(+d.dataset.d,1);saveWL();renderWL();});
+$("wlForm").addEventListener("submit",e=>{e.preventDefault();const n=$("wlName").value.trim();if(!n){$("wlName").focus();return;}
+  wl.push({n:n.slice(0,80),c:Math.max(0,+$("wlCost").value||0),b:false});saveWL();$("wlName").value="";$("wlCost").value="";renderWL();$("wlName").focus();});
+let showWedding=false;
+$("toWedding").addEventListener("click",()=>{showWedding=true;$("wedding").hidden=false;});
+renderWL();
+
+/* Path chooser */
+const LIST_FOR={s:"single",c:"engaged",m:"married"};
+let showAll=false;
+function applyPath(){
+  const chosen=store.get("chosen",false);
+  document.querySelectorAll(".pick").forEach(p=>p.setAttribute("aria-pressed",chosen&&p.dataset.path===aud));
+  document.querySelectorAll("#lists details").forEach(d=>{
+    const mine=d.id==="d-"+LIST_FOR[aud];
+    d.hidden = chosen && !showAll && !mine;
+    if(chosen && mine) d.open=true;
+  });
+  $("showAll").hidden = !chosen || showAll;
+  $("wedding").hidden = chosen && aud!=="c" && !showWedding;
+}
+document.querySelectorAll(".pick").forEach(p=>p.addEventListener("click",()=>{
+  store.set("chosen",true); showAll=false; setAud(p.dataset.path); applyPath();
+  const name={s:"singles",c:"courting",m:"marriage"}[aud];
+  toast(`Showing everything for ${name}. You can change this anytime.`);
+  $("today-sec").scrollIntoView({behavior:"smooth",block:"start"});
+}));
+$("aud").addEventListener("click",()=>{store.set("chosen",true); showAll=false; applyPath();});
+$("showAll").onclick=()=>{showAll=true; applyPath();};
+
+/* How-to guide */
+if(!store.get("seenGuide",false)) $("guide").open=true;
+$("guideOk").onclick=()=>{store.set("seenGuide",true); $("guide").open=false; $("start").scrollIntoView({behavior:"smooth",block:"start"});};
+$("guide").addEventListener("toggle",()=>{if(!$("guide").open) store.set("seenGuide",true);});
+$("navHelp").onclick=()=>{$("guide").open=true; $("guide").scrollIntoView({behavior:"smooth",block:"start"});};
+applyPath();
+</script>
+
+</body>
+</html>
