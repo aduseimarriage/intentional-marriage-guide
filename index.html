@@ -28,15 +28,17 @@
   --gold:#b5832f;
   --green:#4f6a3a;
   --green-soft:#e5ebd6;
+  --nav-on:#c9923a;
+  --nav-on-fg:#2e1f15;
   --display:"Young Serif", Georgia, "Times New Roman", serif;
   --body:"Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
 }
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --bg:#1d1510;--surface:#2a1f17;--ink:#f4eadb;--muted:#c3ad93;--line:#46362a;
-  --plum:#e3c49f;--plum-soft:#3b2b1f;--gold:#dcab55;--green:#aac690;--green-soft:#28311f;color-scheme:dark}}
+  --plum:#e3c49f;--plum-soft:#3b2b1f;--gold:#dcab55;--green:#aac690;--green-soft:#28311f;--nav-on:#2a1f17;--nav-on-fg:#f4eadb;color-scheme:dark}}
 :root[data-theme="dark"]{
   --bg:#1d1510;--surface:#2a1f17;--ink:#f4eadb;--muted:#c3ad93;--line:#46362a;
-  --plum:#e3c49f;--plum-soft:#3b2b1f;--gold:#dcab55;--green:#aac690;--green-soft:#28311f;color-scheme:dark}
+  --plum:#e3c49f;--plum-soft:#3b2b1f;--gold:#dcab55;--green:#aac690;--green-soft:#28311f;--nav-on:#2a1f17;--nav-on-fg:#f4eadb;color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -66,12 +68,15 @@ header{display:flex;flex-direction:column;gap:10px;text-align:left}
 }
 .eyebrow{font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);font-weight:600}
 .family{font-family:var(--display);font-size:clamp(1.05rem,4.2vw,1.25rem);line-height:1.35;color:var(--plum);margin:0;text-wrap:balance}
-.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:flex;gap:2px;overflow-x:auto;scrollbar-width:none;padding:5px;border-radius:14px;background:var(--surface);border:1px solid var(--line);box-shadow:0 6px 18px -12px rgba(46,31,21,.35)}
-.topnav::-webkit-scrollbar{display:none}
-.topnav a,.topnav button{flex:1 0 auto;font:inherit;font-size:.8rem;font-weight:600;color:var(--muted);text-decoration:none;padding:8px 5px;border-radius:10px;border:0;background:transparent;cursor:pointer;text-align:center;white-space:nowrap}
-.topnav a:hover,.topnav button:hover{background:var(--plum-soft);color:var(--plum)}
-.topnav a:focus-visible,.topnav button:focus-visible{outline:3px solid var(--gold);outline-offset:1px}
-section,.start{scroll-margin-top:72px}
+.topnav{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;display:grid;grid-template-columns:repeat(4,1fr);gap:4px;padding:6px;border-radius:16px;background:var(--plum);box-shadow:0 10px 24px -12px rgba(46,31,21,.6)}
+@media (min-width:560px){.topnav{display:flex}.topnav a,.topnav button{flex:1 1 0}}
+.topnav a,.topnav button{font:inherit;font-size:.92rem;font-weight:700;letter-spacing:.01em;color:var(--bg);text-decoration:none;padding:11px 6px;border-radius:11px;border:0;background:transparent;cursor:pointer;text-align:center;white-space:nowrap;transition:background .2s,color .2s}
+.topnav a:hover,.topnav button:hover{background:color-mix(in srgb,var(--bg) 16%,transparent)}
+.topnav a.on{background:var(--nav-on);color:var(--nav-on-fg);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--nav-on-fg) 25%,transparent)}
+.topnav #navHelp{border:1.5px solid color-mix(in srgb,var(--bg) 45%,transparent)}
+.topnav a:focus-visible,.topnav button:focus-visible{outline:3px solid var(--gold);outline-offset:2px}
+section,.start{scroll-margin-top:118px}
+@media (min-width:560px){section,.start{scroll-margin-top:80px}}
 .start{display:flex;flex-direction:column;gap:10px}
 .start-h{font-family:var(--display);font-weight:400;font-size:1.3rem;margin:0}
 .pick{display:flex;align-items:center;justify-content:space-between;gap:14px;text-align:left;font:inherit;color:var(--ink);background:var(--surface);border:1.5px solid var(--line);border-radius:16px;padding:16px 18px;cursor:pointer;width:100%}
@@ -828,6 +833,13 @@ $("restoreFile").onchange=e=>{const f=e.target.files[0];if(!f)return;f.text().th
   b.hidden=!dl && !!window.claude;}catch(e){}})();
 
 counts(); render(); dash(); renderDate();
+/* Highlight the menu item for the section on screen */
+(()=>{const links=[...document.querySelectorAll('.topnav a[href^="#"]')];
+  const map=new Map(links.map(a=>[a.getAttribute('href').slice(1),a]));
+  if(!('IntersectionObserver' in window))return;
+  const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){links.forEach(l=>l.classList.remove('on'));const a=map.get(e.target.id);if(a)a.classList.add('on');}})},{rootMargin:'-40% 0px -55% 0px'});
+  map.forEach((a,id)=>{const el=document.getElementById(id);if(el)io.observe(el);});})();
+
 if(FEEDBACK_URL){$("feedback").href=FEEDBACK_URL;$("feedback").hidden=false;}
 if(NEWSLETTER_URL){$("newsletter").href=NEWSLETTER_URL;$("newsletter").hidden=false;}
 
